@@ -1,0 +1,24 @@
+2022-02-14 05:46:06,794 INFO 50092 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 81833261ms at 2022-02-15 04:30:00.055
+2022-02-14 05:46:06,915 INFO 50363 [Job#164478876649635842475078866891] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js executing by app
+2022-02-14 05:46:07,035 INFO 50363 [Job#164478876649635842475078866891] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js execute succeed, used 87ms. 
+2022-02-14 22:36:52,513 INFO 51800 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 22:36:52,513 INFO 51800 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 22:36:52,513 INFO 51800 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-14 22:36:53,794 INFO 51799 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 21186208ms at 2022-02-15 04:30:00.002
+2022-02-14 22:36:53,794 INFO 51799 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 4986206ms at 2022-02-15 00:00:00.000
+2022-02-14 22:36:53,794 INFO 51799 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 4987206ms at 2022-02-15 00:00:01.000
+2022-02-14 23:17:51,999 INFO 52444 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 23:17:51,999 INFO 52444 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 23:17:51,999 INFO 52444 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-14 23:18:53,663 INFO 52467 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 23:18:53,663 INFO 52467 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 23:18:53,663 INFO 52467 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-14 23:19:24,357 INFO 52488 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-14 23:19:24,357 INFO 52488 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-14 23:19:24,357 INFO 52488 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-15 21:41:49,810 INFO 56793 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2022-02-15 21:41:49,810 INFO 56793 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/app/schedule/clean_log.js
+2022-02-15 21:41:49,810 INFO 56793 [egg-schedule]: register schedule /Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2022-02-15 21:41:51,319 INFO 56792 [Timer] /Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 24488683ms at 2022-02-16 04:30:00.002
+2022-02-15 21:41:51,319 INFO 56792 [Timer] /Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 8288681ms at 2022-02-16 00:00:00.000
+2022-02-15 21:41:51,320 INFO 56792 [Timer] /Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 8289681ms at 2022-02-16 00:00:01.001

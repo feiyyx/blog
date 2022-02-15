@@ -1,0 +1,68 @@
+2022-02-13 22:11:44,750 ERROR 48880 [-/127.0.0.1/-/20ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 37, Column 39]
+  expected block end in if statement
+  expected block end in if statement
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at Template.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:538:21)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:328:7)
+    at Object.asyncIter (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:334:3)
+    at NunjucksEnvironment.getTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:321:9)
+    at NunjucksEnvironment.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:360:10)
+name: "Template render error"
+pid: 48880
+hostname: feiyiyangdeMacBook-Pro.local
+
+2022-02-13 22:13:52,851 ERROR 48880 [-/127.0.0.1/-/7ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 47, Column 39]
+  expected block end in if statement
+  expected block end in if statement
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at Template.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:538:21)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:328:7)
+    at Object.asyncIter (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:334:3)
+    at NunjucksEnvironment.getTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:321:9)
+    at NunjucksEnvironment.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:360:10)
+name: "Template render error"
+pid: 48880
+hostname: feiyiyangdeMacBook-Pro.local
+
+2022-02-13 22:14:44,938 ERROR 48880 [-/127.0.0.1/-/3ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 37, Column 39]
+  expected block end in if statement
+  expected block end in if statement
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at Template.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:538:21)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:328:7)
+    at Object.asyncIter (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:334:3)
+    at NunjucksEnvironment.getTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:321:9)
+    at NunjucksEnvironment.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:360:10)
+name: "Template render error"
+pid: 48880
+hostname: feiyiyangdeMacBook-Pro.local
+
+2022-02-13 22:15:27,732 ERROR 48880 [-/127.0.0.1/-/3ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 37, Column 19]
+  parseAggregate: expected comma after expression
+  parseAggregate: expected comma after expression
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at Template.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:538:21)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:366:27
+    at createTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:315:9)
+    at handle (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:327:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:339:9
+    at next (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:328:7)
+    at Object.asyncIter (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:334:3)
+    at NunjucksEnvironment.getTemplate (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:321:9)
+    at NunjucksEnvironment.render (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:360:10)
+name: "Template render error"
+pid: 48880
+hostname: feiyiyangdeMacBook-Pro.local
+

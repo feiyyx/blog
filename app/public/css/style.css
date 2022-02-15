@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    width: 100%;
+    background-color: #eae3ce;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+code {
+    border-radius: 10px;
+}
+
+/* 引用样式 */
+blockquote {
+    color: #444;
+    padding: 1px 23px;
+    margin: 22px 0;
+    border-left: 6px solid #d3d3d3;
+    background-color: #f0f0f0;
+}
+
+blockquote > p {
+    margin: 10px 0;
+}
+
+blockquote:after {
+    display: block;
+    content: "";
+}
+
+img {
+    max-width: 50vw;
+}
+
+h1 {
+    font-size: 2em;
+    margin-block-start: 20px;
+}
+
+article > ul > li:nth-child(n) {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* 博客主体 */
+.blog-main {}
+
+.blog-title {
+    margin-block-start: 0;
+    font-family: Luminari, fantasy;
+}
+
+.blog-subtitle {
+    font-size: 14px;
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+    color: #666;
+}
+
+.blog-link > a {
+    margin: 5px 10px;
+}
+
+.blog-link > a:hover {
+    color: #aaa;
+}
+
+.blog-main .blog-container {
+    display: grid;
+    grid-template-columns: 20vw 50vw 20vw;
+    grid-template-rows: 8vw auto 5vw;
+    grid-template-areas: 
+        '. h .'
+        '. m .'
+        '. f .';
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.blog-main .blog-container .blog-header {
+    text-align: center;
+    grid-area: h;
+}
+
+.blog-main .blog-container .blog-wrapper {
+    grid-area: m;
+}
+
+.blog-main .blog-container .blog-footer {
+    margin-bottom: 4vw;
+    grid-area: f;
+    text-align: center;
+}
+
+/* 文章列表 */
+.article-list-wrapper {
+    text-align: left;
+    width: 450px;
+    margin: 0 auto;
+}
+.article-list-title {}
+.article-pagination {
+    text-align: center;
+}
+
+.article-list {
+    padding-left: 1vw;
+}
+.article-list-item {
+    line-height: 2;
+}
+
+.article-time {
+    display: inline-block;
+    flex-basis: 110px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-weight: bold;
+}
+
+.article-list li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.article-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-basis: 340px;
+}
+
+.article-pagination {
+    margin-top: 50px;
+}
+
+.page-item:nth-child(n+1) {
+    margin-left: 2vw;
+}
+
+/* 返回顶部 */
+#to-top {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: #000;
+}
+
+/* 特殊类 */
+.active {
+    color: red;
+}
+
+/* highlight blockquote */
+.hljs-ln-line:first-child {
+    padding-right: 10px;
+}

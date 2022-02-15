@@ -1,0 +1,102 @@
+2022-02-05 16:12:44,972 ERROR 12663 [-/127.0.0.1/-/24ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 36, Column 19]
+  Error: Unable to call `formatDate`, which is undefined or falsey
+  Error: Unable to call `formatDate`, which is undefined or falsey
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:563:19
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:15:11)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:40:11)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:3)
+    at Context.getSuper (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:454:5)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:39:9)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:14:88)
+    at b_header (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:41:1)
+    at Template.root [as rootRenderFunc] (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:10:85)
+name: "Template render error"
+pid: 12663
+hostname: 192.168.0.103
+
+2022-02-05 16:13:19,567 ERROR 12663 [-/127.0.0.1/-/9ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 36, Column 19]
+  Error: Unable to call `formatDate`, which is undefined or falsey
+  Error: Unable to call `formatDate`, which is undefined or falsey
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:563:19
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:15:11)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:58:11)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:3)
+    at Context.getSuper (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:454:5)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:9)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:14:88)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:45:1)
+    at b_header (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:41:1)
+name: "Template render error"
+pid: 12663
+hostname: 192.168.0.103
+
+2022-02-05 16:13:33,240 ERROR 12663 [-/127.0.0.1/-/14ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 36, Column 19]
+  Error: Unable to call `formatDate`, which is undefined or falsey
+  Error: Unable to call `formatDate`, which is undefined or falsey
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:563:19
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:15:11)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:58:11)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:3)
+    at Context.getSuper (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:454:5)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:9)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:14:88)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:45:1)
+    at b_header (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:41:1)
+name: "Template render error"
+pid: 12663
+hostname: 192.168.0.103
+
+2022-02-05 16:13:51,878 ERROR 14020 [-/127.0.0.1/-/40ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 36, Column 19]
+  Error: Unable to call `formatDate`, which is undefined or falsey
+  Error: Unable to call `formatDate`, which is undefined or falsey
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:563:19
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:15:11)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:58:11)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:3)
+    at Context.getSuper (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:454:5)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:9)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:14:88)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:45:1)
+    at b_header (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:41:1)
+name: "Template render error"
+pid: 14020
+hostname: 192.168.0.103
+
+2022-02-05 16:20:18,203 ERROR 14279 [-/127.0.0.1/-/29ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 36, Column 19]
+  Error: Unable to call `formatDate`, which is undefined or falsey
+  Error: Unable to call `formatDate`, which is undefined or falsey
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:563:19
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:15:11)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:58:11)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:3)
+    at Context.getSuper (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:454:5)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:9)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:14:88)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:45:1)
+    at b_header (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:41:1)
+name: "Template render error"
+pid: 14279
+hostname: 192.168.0.103
+
+2022-02-05 16:28:15,191 ERROR 14438 [-/127.0.0.1/-/25ms GET /] nodejs.Template render error: (/Users/feiyyx/Desktop/development/blogv2/app/view/index.html) [Line 36, Column 19]
+  Error: Unable to call `formatDate`, which is undefined or falsey
+  Error: Unable to call `formatDate`, which is undefined or falsey
+    at Object._prettifyError (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/lib.js:36:11)
+    at /Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:563:19
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:15:11)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:58:11)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:3)
+    at Context.getSuper (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:454:5)
+    at b_container (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:57:9)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:14:88)
+    at eval (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:45:1)
+    at b_header (eval at _compile (/Users/feiyyx/Desktop/development/blogv2/node_modules/nunjucks/src/environment.js:633:18), <anonymous>:41:1)
+name: "Template render error"
+pid: 14438
+hostname: 192.168.0.103
+

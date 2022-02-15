@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block header %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>{{ titile }}</title>
+    {% endblock %}
+</head>
+<body>
+    <div class="blog-main">
+        <main class="blog-container">
+
+            <div id="to-top" onclick="toTop()">
+                <img src="../images/top.png" alt="top">
+            </div>
+            <header class="blog-header">
+                <h1 class="blog-title">
+                    feiyyx's blog
+                </h1>
+                <div class="blog-subtitle">
+                    不会写文章的画师，不是一个好coder:P。
+                </div>
+                <div class="blog-link">
+                    <a href="../index">文章</a>
+                    <span class="link-seperate">/</span>
+                    <a href="../about">关于</a>
+                    <span class="link-seperate">/</span>
+                    <a href="../link">友链</a>
+                </div>
+            </header>
+            <section class="blog-wrapper">
+                {% block container %}
+                {% endblock %}
+            </section>
+        
+            <footer class="blog-footer">
+                <p>Copyright © 2017 - 2022 feiyyx. Made by <a href="https://github.com/" target="_blank">feiyyx</a>.</p>
+            </footer>
+        </main>
+    </div>
+    {% block script %}
+    <script type="text/javascript">
+        window.onload = function() {
+            window.onscroll =  function () {
+                let top
+                if (document.documentElement && document.documentElement.scrollTop) {
+                    top = document.documentElement.scrollTop
+                }
+                else if (document.body) {
+                    top = document.body.scrollTop
+                }
+                if(top > 300) {
+                    document.getElementById('to-top').style.opacity = 1
+                }
+                else {
+                    document.getElementById('to-top').style.opacity = 0
+                }
+            }
+        }
+        function toTop() {
+            document.body.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+    </script>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,439 @@
+2022-02-05 00:04:07,194 INFO 10579 [egg-logrotator] app logger reload: got log-reload message
+2022-02-05 00:14:13,011 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 00:14:13,011 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 00:24:20,009 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 00:24:20,010 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 00:34:27,010 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 00:34:27,010 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 00:44:34,008 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 00:44:34,008 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 00:54:42,009 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 00:54:42,009 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 01:04:48,003 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 01:04:48,003 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 01:14:54,012 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 01:14:54,012 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 01:24:28,009 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 01:24:28,009 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 01:34:16,101 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 01:34:16,102 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 01:44:28,611 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 01:44:28,715 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 01:54:44,656 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 01:54:44,665 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 02:04:58,592 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 02:04:58,599 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 02:15:12,667 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 02:15:12,676 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 02:25:29,634 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 02:25:29,664 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 02:35:44,529 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 02:35:44,541 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 02:45:59,578 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 02:45:59,610 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 02:56:13,511 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 02:56:13,539 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 03:06:27,496 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 03:06:27,499 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 03:16:41,513 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 03:16:41,535 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 03:26:55,578 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 03:26:55,588 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 03:37:08,509 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 03:37:08,518 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 03:47:22,557 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 03:47:22,582 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 03:57:37,453 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 03:57:37,472 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 04:07:52,623 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 04:07:52,641 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 04:18:05,443 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 04:18:05,469 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 04:28:18,386 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 04:28:18,400 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 04:38:31,572 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 04:38:31,591 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 04:38:31,908 INFO 10579 [-/127.0.0.1/-/61ms SCHEDULE /__schedule?path=/Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&disable=false&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/xw/r4k841s50h1bwwn7sj6m6wfr0000gn/T/egg-multipart-tmp/blogv2"
+2022-02-05 04:38:31,941 INFO 10579 [-/127.0.0.1/-/100ms SCHEDULE /__schedule?path=/Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&disable=false&immediate=false] [egg-multipart:CleanTmpdir] end
+2022-02-05 04:48:45,584 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 04:48:45,609 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 04:58:59,501 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 04:58:59,510 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 05:09:13,595 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 05:09:13,603 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 05:19:27,540 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 05:19:27,637 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 05:29:42,635 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 05:29:42,643 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 05:39:56,601 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 05:39:56,614 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 05:50:10,481 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 05:50:10,496 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 06:00:24,503 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 06:00:24,523 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 06:10:38,410 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 06:10:38,468 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 06:20:51,469 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 06:20:51,473 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 06:31:05,603 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 06:31:05,612 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 06:41:20,504 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 06:41:20,513 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 06:51:33,494 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 06:51:33,508 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 07:01:46,512 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 07:01:46,531 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 07:12:00,488 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 07:12:00,502 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 07:22:14,513 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 07:22:14,532 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 07:32:35,559 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 07:32:35,570 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 07:42:54,490 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 07:42:54,508 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 07:53:11,598 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 07:53:11,611 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 08:00:03,949 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 08:00:03,992 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 12:03:39,004 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 12:03:39,004 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 12:09:34,004 WARN 10579 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 12:09:34,004 WARN 10579 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 12:12:48,646 INFO 12286 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 12:12:48,670 INFO 12286 [egg-multipart] stream mode enable
+2022-02-05 12:12:48,778 INFO 12286 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 12:12:48,780 INFO 12286 [egg-security] use csrf middleware
+2022-02-05 12:12:48,781 INFO 12286 [egg-security] use methodnoallow middleware
+2022-02-05 12:12:48,781 INFO 12286 [egg-security] use noopen middleware
+2022-02-05 12:12:48,782 INFO 12286 [egg-security] use nosniff middleware
+2022-02-05 12:12:48,783 INFO 12286 [egg-security] use xssProtection middleware
+2022-02-05 12:12:48,784 INFO 12286 [egg-security] use xframe middleware
+2022-02-05 12:12:48,785 INFO 12286 [egg-security] use dta middleware
+2022-02-05 12:12:48,785 INFO 12286 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 12:12:48,805 INFO 12286 [egg:core] dump config after load, 5ms
+2022-02-05 12:12:48,817 INFO 12286 [egg-watcher:application] watcher start success
+2022-02-05 12:12:48,823 INFO 12286 [egg:core] dump config after ready, 4ms
+2022-02-05 12:12:57,493 INFO 12286 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 12:26:23,686 INFO 12488 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 12:26:23,712 INFO 12488 [egg-multipart] stream mode enable
+2022-02-05 12:26:23,779 INFO 12488 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 12:26:23,782 INFO 12488 [egg-security] use csrf middleware
+2022-02-05 12:26:23,782 INFO 12488 [egg-security] use methodnoallow middleware
+2022-02-05 12:26:23,783 INFO 12488 [egg-security] use noopen middleware
+2022-02-05 12:26:23,783 INFO 12488 [egg-security] use nosniff middleware
+2022-02-05 12:26:23,784 INFO 12488 [egg-security] use xssProtection middleware
+2022-02-05 12:26:23,784 INFO 12488 [egg-security] use xframe middleware
+2022-02-05 12:26:23,784 INFO 12488 [egg-security] use dta middleware
+2022-02-05 12:26:23,785 INFO 12488 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 12:26:23,803 INFO 12488 [egg:core] dump config after load, 4ms
+2022-02-05 12:26:23,814 INFO 12488 [egg-watcher:application] watcher start success
+2022-02-05 12:26:23,820 INFO 12488 [egg:core] dump config after ready, 5ms
+2022-02-05 12:26:41,133 INFO 12488 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 12:34:25,850 INFO 12641 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 12:34:25,877 INFO 12641 [egg-multipart] stream mode enable
+2022-02-05 12:34:25,947 INFO 12641 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 12:34:25,949 INFO 12641 [egg-security] use csrf middleware
+2022-02-05 12:34:25,950 INFO 12641 [egg-security] use methodnoallow middleware
+2022-02-05 12:34:25,950 INFO 12641 [egg-security] use noopen middleware
+2022-02-05 12:34:25,950 INFO 12641 [egg-security] use nosniff middleware
+2022-02-05 12:34:25,951 INFO 12641 [egg-security] use xssProtection middleware
+2022-02-05 12:34:25,951 INFO 12641 [egg-security] use xframe middleware
+2022-02-05 12:34:25,952 INFO 12641 [egg-security] use dta middleware
+2022-02-05 12:34:25,952 INFO 12641 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 12:34:27,208 INFO 12641 [egg:core] dump config after load, 4ms
+2022-02-05 12:34:27,224 INFO 12641 [egg-watcher:application] watcher start success
+2022-02-05 12:34:27,230 INFO 12641 [egg:core] dump config after ready, 5ms
+2022-02-05 12:34:38,685 INFO 12663 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 12:34:38,709 INFO 12663 [egg-multipart] stream mode enable
+2022-02-05 12:34:38,772 INFO 12663 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 12:34:38,774 INFO 12663 [egg-security] use csrf middleware
+2022-02-05 12:34:38,774 INFO 12663 [egg-security] use methodnoallow middleware
+2022-02-05 12:34:38,775 INFO 12663 [egg-security] use noopen middleware
+2022-02-05 12:34:38,775 INFO 12663 [egg-security] use nosniff middleware
+2022-02-05 12:34:38,776 INFO 12663 [egg-security] use xssProtection middleware
+2022-02-05 12:34:38,776 INFO 12663 [egg-security] use xframe middleware
+2022-02-05 12:34:38,776 INFO 12663 [egg-security] use dta middleware
+2022-02-05 12:34:38,776 INFO 12663 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 12:34:39,946 INFO 12663 [egg:core] dump config after load, 6ms
+2022-02-05 12:34:39,956 INFO 12663 [egg-watcher:application] watcher start success
+2022-02-05 12:34:39,963 INFO 12663 [egg:core] dump config after ready, 5ms
+2022-02-05 12:35:54,000 INFO 12663 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 13:20:58,163 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 13:20:58,169 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 13:31:09,163 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 13:31:09,164 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 13:41:20,153 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 13:41:20,154 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 13:51:30,161 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 13:51:30,162 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 14:01:41,011 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 14:01:41,011 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 14:11:51,010 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 14:11:51,011 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 14:22:15,011 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 14:22:15,011 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 14:32:26,002 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 14:32:27,152 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 14:42:37,009 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 14:42:38,146 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 14:52:48,009 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 14:52:48,010 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 15:02:59,009 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 15:02:59,010 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 15:13:10,008 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 15:13:10,008 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 15:23:21,011 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 15:23:21,011 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 15:33:32,011 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 15:33:32,011 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 15:43:45,144 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 15:43:45,145 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 15:53:54,010 WARN 12663 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 15:53:54,010 WARN 12663 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 16:13:34,035 INFO 13991 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:13:34,065 INFO 13991 [egg-multipart] stream mode enable
+2022-02-05 16:13:34,271 INFO 13991 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:13:34,273 INFO 13991 [egg-security] use csrf middleware
+2022-02-05 16:13:34,275 INFO 13991 [egg-security] use methodnoallow middleware
+2022-02-05 16:13:34,275 INFO 13991 [egg-security] use noopen middleware
+2022-02-05 16:13:34,276 INFO 13991 [egg-security] use nosniff middleware
+2022-02-05 16:13:34,277 INFO 13991 [egg-security] use xssProtection middleware
+2022-02-05 16:13:34,277 INFO 13991 [egg-security] use xframe middleware
+2022-02-05 16:13:34,278 INFO 13991 [egg-security] use dta middleware
+2022-02-05 16:13:34,278 INFO 13991 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:13:36,013 INFO 13991 [egg:core] dump config after load, 5ms
+2022-02-05 16:13:36,027 INFO 13991 [egg-watcher:application] watcher start success
+2022-02-05 16:13:36,036 INFO 13991 [egg:core] dump config after ready, 7ms
+2022-02-05 16:13:49,447 INFO 14020 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:13:49,487 INFO 14020 [egg-multipart] stream mode enable
+2022-02-05 16:13:49,585 INFO 14020 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:13:49,588 INFO 14020 [egg-security] use csrf middleware
+2022-02-05 16:13:49,589 INFO 14020 [egg-security] use methodnoallow middleware
+2022-02-05 16:13:49,589 INFO 14020 [egg-security] use noopen middleware
+2022-02-05 16:13:49,590 INFO 14020 [egg-security] use nosniff middleware
+2022-02-05 16:13:49,590 INFO 14020 [egg-security] use xssProtection middleware
+2022-02-05 16:13:49,591 INFO 14020 [egg-security] use xframe middleware
+2022-02-05 16:13:49,593 INFO 14020 [egg-security] use dta middleware
+2022-02-05 16:13:49,594 INFO 14020 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:13:49,616 INFO 14020 [egg:core] dump config after load, 5ms
+2022-02-05 16:13:49,630 INFO 14020 [egg-watcher:application] watcher start success
+2022-02-05 16:13:49,637 INFO 14020 [egg:core] dump config after ready, 5ms
+2022-02-05 16:13:51,846 INFO 14020 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 16:15:03,006 INFO 14057 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:15:03,031 INFO 14057 [egg-multipart] stream mode enable
+2022-02-05 16:15:03,095 INFO 14057 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:15:03,097 INFO 14057 [egg-security] use csrf middleware
+2022-02-05 16:15:03,098 INFO 14057 [egg-security] use methodnoallow middleware
+2022-02-05 16:15:03,098 INFO 14057 [egg-security] use noopen middleware
+2022-02-05 16:15:03,098 INFO 14057 [egg-security] use nosniff middleware
+2022-02-05 16:15:03,099 INFO 14057 [egg-security] use xssProtection middleware
+2022-02-05 16:15:03,099 INFO 14057 [egg-security] use xframe middleware
+2022-02-05 16:15:03,100 INFO 14057 [egg-security] use dta middleware
+2022-02-05 16:15:03,100 INFO 14057 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:15:03,119 INFO 14057 [egg:core] dump config after load, 6ms
+2022-02-05 16:15:03,128 INFO 14057 [egg-watcher:application] watcher start success
+2022-02-05 16:15:03,135 INFO 14057 [egg:core] dump config after ready, 5ms
+2022-02-05 16:15:11,899 INFO 14071 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:15:11,923 INFO 14071 [egg-multipart] stream mode enable
+2022-02-05 16:15:11,999 INFO 14071 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:15:12,000 INFO 14071 [egg-security] use csrf middleware
+2022-02-05 16:15:12,001 INFO 14071 [egg-security] use methodnoallow middleware
+2022-02-05 16:15:12,001 INFO 14071 [egg-security] use noopen middleware
+2022-02-05 16:15:12,002 INFO 14071 [egg-security] use nosniff middleware
+2022-02-05 16:15:12,002 INFO 14071 [egg-security] use xssProtection middleware
+2022-02-05 16:15:12,002 INFO 14071 [egg-security] use xframe middleware
+2022-02-05 16:15:12,003 INFO 14071 [egg-security] use dta middleware
+2022-02-05 16:15:12,003 INFO 14071 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:15:12,096 INFO 14071 [egg:core] dump config after load, 4ms
+2022-02-05 16:15:12,106 INFO 14071 [egg-watcher:application] watcher start success
+2022-02-05 16:15:12,112 INFO 14071 [egg:core] dump config after ready, 4ms
+2022-02-05 16:16:20,206 INFO 14089 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:16:20,231 INFO 14089 [egg-multipart] stream mode enable
+2022-02-05 16:16:20,296 INFO 14089 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:16:20,298 INFO 14089 [egg-security] use csrf middleware
+2022-02-05 16:16:20,298 INFO 14089 [egg-security] use methodnoallow middleware
+2022-02-05 16:16:20,299 INFO 14089 [egg-security] use noopen middleware
+2022-02-05 16:16:20,299 INFO 14089 [egg-security] use nosniff middleware
+2022-02-05 16:16:20,300 INFO 14089 [egg-security] use xssProtection middleware
+2022-02-05 16:16:20,300 INFO 14089 [egg-security] use xframe middleware
+2022-02-05 16:16:20,300 INFO 14089 [egg-security] use dta middleware
+2022-02-05 16:16:20,300 INFO 14089 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:16:20,317 INFO 14089 [egg:core] dump config after load, 4ms
+2022-02-05 16:16:20,327 INFO 14089 [egg-watcher:application] watcher start success
+2022-02-05 16:16:20,333 INFO 14089 [egg:core] dump config after ready, 4ms
+2022-02-05 16:20:15,816 INFO 14279 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:20:15,841 INFO 14279 [egg-multipart] stream mode enable
+2022-02-05 16:20:15,905 INFO 14279 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:20:15,907 INFO 14279 [egg-security] use csrf middleware
+2022-02-05 16:20:15,908 INFO 14279 [egg-security] use methodnoallow middleware
+2022-02-05 16:20:15,908 INFO 14279 [egg-security] use noopen middleware
+2022-02-05 16:20:15,908 INFO 14279 [egg-security] use nosniff middleware
+2022-02-05 16:20:15,909 INFO 14279 [egg-security] use xssProtection middleware
+2022-02-05 16:20:15,909 INFO 14279 [egg-security] use xframe middleware
+2022-02-05 16:20:15,910 INFO 14279 [egg-security] use dta middleware
+2022-02-05 16:20:15,910 INFO 14279 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:20:17,370 INFO 14279 [egg:core] dump config after load, 4ms
+2022-02-05 16:20:17,385 INFO 14279 [egg-watcher:application] watcher start success
+2022-02-05 16:20:17,391 INFO 14279 [egg:core] dump config after ready, 5ms
+2022-02-05 16:20:18,181 INFO 14279 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 16:21:11,343 INFO 14302 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:21:11,367 INFO 14302 [egg-multipart] stream mode enable
+2022-02-05 16:21:11,433 INFO 14302 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:21:11,435 INFO 14302 [egg-security] use csrf middleware
+2022-02-05 16:21:11,436 INFO 14302 [egg-security] use methodnoallow middleware
+2022-02-05 16:21:11,436 INFO 14302 [egg-security] use noopen middleware
+2022-02-05 16:21:11,437 INFO 14302 [egg-security] use nosniff middleware
+2022-02-05 16:21:11,437 INFO 14302 [egg-security] use xssProtection middleware
+2022-02-05 16:21:11,437 INFO 14302 [egg-security] use xframe middleware
+2022-02-05 16:21:11,438 INFO 14302 [egg-security] use dta middleware
+2022-02-05 16:21:11,438 INFO 14302 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:21:12,623 INFO 14302 [egg:core] dump config after load, 5ms
+2022-02-05 16:21:12,634 INFO 14302 [egg-watcher:application] watcher start success
+2022-02-05 16:21:12,641 INFO 14302 [egg:core] dump config after ready, 5ms
+2022-02-05 16:21:18,806 INFO 14302 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 16:24:22,537 INFO 14346 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:24:22,562 INFO 14346 [egg-multipart] stream mode enable
+2022-02-05 16:24:22,631 INFO 14346 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:24:22,633 INFO 14346 [egg-security] use csrf middleware
+2022-02-05 16:24:22,633 INFO 14346 [egg-security] use methodnoallow middleware
+2022-02-05 16:24:22,633 INFO 14346 [egg-security] use noopen middleware
+2022-02-05 16:24:22,634 INFO 14346 [egg-security] use nosniff middleware
+2022-02-05 16:24:22,634 INFO 14346 [egg-security] use xssProtection middleware
+2022-02-05 16:24:22,635 INFO 14346 [egg-security] use xframe middleware
+2022-02-05 16:24:22,635 INFO 14346 [egg-security] use dta middleware
+2022-02-05 16:24:22,635 INFO 14346 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:24:23,793 INFO 14346 [egg:core] dump config after load, 4ms
+2022-02-05 16:24:23,804 INFO 14346 [egg-watcher:application] watcher start success
+2022-02-05 16:24:23,810 INFO 14346 [egg:core] dump config after ready, 4ms
+2022-02-05 16:24:26,324 INFO 14355 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:24:26,356 INFO 14355 [egg-multipart] stream mode enable
+2022-02-05 16:24:26,440 INFO 14355 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:24:26,443 INFO 14355 [egg-security] use csrf middleware
+2022-02-05 16:24:26,444 INFO 14355 [egg-security] use methodnoallow middleware
+2022-02-05 16:24:26,444 INFO 14355 [egg-security] use noopen middleware
+2022-02-05 16:24:26,444 INFO 14355 [egg-security] use nosniff middleware
+2022-02-05 16:24:26,445 INFO 14355 [egg-security] use xssProtection middleware
+2022-02-05 16:24:26,445 INFO 14355 [egg-security] use xframe middleware
+2022-02-05 16:24:26,446 INFO 14355 [egg-security] use dta middleware
+2022-02-05 16:24:26,446 INFO 14355 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:24:26,472 INFO 14355 [egg:core] dump config after load, 9ms
+2022-02-05 16:24:26,486 INFO 14355 [egg-watcher:application] watcher start success
+2022-02-05 16:24:26,495 INFO 14355 [egg:core] dump config after ready, 5ms
+2022-02-05 16:24:27,357 INFO 14356 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:24:27,381 INFO 14356 [egg-multipart] stream mode enable
+2022-02-05 16:24:27,464 INFO 14356 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:24:27,466 INFO 14356 [egg-security] use csrf middleware
+2022-02-05 16:24:27,467 INFO 14356 [egg-security] use methodnoallow middleware
+2022-02-05 16:24:27,467 INFO 14356 [egg-security] use noopen middleware
+2022-02-05 16:24:27,468 INFO 14356 [egg-security] use nosniff middleware
+2022-02-05 16:24:27,468 INFO 14356 [egg-security] use xssProtection middleware
+2022-02-05 16:24:27,470 INFO 14356 [egg-security] use xframe middleware
+2022-02-05 16:24:27,470 INFO 14356 [egg-security] use dta middleware
+2022-02-05 16:24:27,470 INFO 14356 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:24:27,489 INFO 14356 [egg:core] dump config after load, 4ms
+2022-02-05 16:24:27,504 INFO 14356 [egg-watcher:application] watcher start success
+2022-02-05 16:24:27,521 INFO 14356 [egg:core] dump config after ready, 13ms
+2022-02-05 16:24:41,285 INFO 14366 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:24:41,312 INFO 14366 [egg-multipart] stream mode enable
+2022-02-05 16:24:41,375 INFO 14366 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:24:41,377 INFO 14366 [egg-security] use csrf middleware
+2022-02-05 16:24:41,377 INFO 14366 [egg-security] use methodnoallow middleware
+2022-02-05 16:24:41,378 INFO 14366 [egg-security] use noopen middleware
+2022-02-05 16:24:41,379 INFO 14366 [egg-security] use nosniff middleware
+2022-02-05 16:24:41,379 INFO 14366 [egg-security] use xssProtection middleware
+2022-02-05 16:24:41,379 INFO 14366 [egg-security] use xframe middleware
+2022-02-05 16:24:41,380 INFO 14366 [egg-security] use dta middleware
+2022-02-05 16:24:41,380 INFO 14366 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:24:41,396 INFO 14366 [egg:core] dump config after load, 4ms
+2022-02-05 16:24:41,407 INFO 14366 [egg-watcher:application] watcher start success
+2022-02-05 16:24:41,414 INFO 14366 [egg:core] dump config after ready, 5ms
+2022-02-05 16:27:47,273 INFO 14426 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:27:47,300 INFO 14426 [egg-multipart] stream mode enable
+2022-02-05 16:27:47,371 INFO 14426 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:27:47,373 INFO 14426 [egg-security] use csrf middleware
+2022-02-05 16:27:47,374 INFO 14426 [egg-security] use methodnoallow middleware
+2022-02-05 16:27:47,374 INFO 14426 [egg-security] use noopen middleware
+2022-02-05 16:27:47,375 INFO 14426 [egg-security] use nosniff middleware
+2022-02-05 16:27:47,375 INFO 14426 [egg-security] use xssProtection middleware
+2022-02-05 16:27:47,375 INFO 14426 [egg-security] use xframe middleware
+2022-02-05 16:27:47,376 INFO 14426 [egg-security] use dta middleware
+2022-02-05 16:27:47,376 INFO 14426 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:27:47,394 INFO 14426 [egg:core] dump config after load, 5ms
+2022-02-05 16:27:47,414 INFO 14426 [egg-watcher:application] watcher start success
+2022-02-05 16:27:47,422 INFO 14426 [egg:core] dump config after ready, 6ms
+2022-02-05 16:27:55,122 INFO 14438 [egg:logger] init all loggers with options: {"dir":"/Users/feiyyx/Desktop/development/blogv2/logs/blogv2","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"blogv2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"application"}
+2022-02-05 16:27:55,145 INFO 14438 [egg-multipart] stream mode enable
+2022-02-05 16:27:55,207 INFO 14438 [egg-static] starting static serve /public/ -> /Users/feiyyx/Desktop/development/blogv2/app/public
+2022-02-05 16:27:55,209 INFO 14438 [egg-security] use csrf middleware
+2022-02-05 16:27:55,211 INFO 14438 [egg-security] use methodnoallow middleware
+2022-02-05 16:27:55,211 INFO 14438 [egg-security] use noopen middleware
+2022-02-05 16:27:55,211 INFO 14438 [egg-security] use nosniff middleware
+2022-02-05 16:27:55,212 INFO 14438 [egg-security] use xssProtection middleware
+2022-02-05 16:27:55,212 INFO 14438 [egg-security] use xframe middleware
+2022-02-05 16:27:55,212 INFO 14438 [egg-security] use dta middleware
+2022-02-05 16:27:55,212 INFO 14438 [egg-security] compose 7 middlewares into one security middleware
+2022-02-05 16:27:56,325 INFO 14438 [egg:core] dump config after load, 4ms
+2022-02-05 16:27:56,335 INFO 14438 [egg-watcher:application] watcher start success
+2022-02-05 16:27:56,342 INFO 14438 [egg:core] dump config after ready, 5ms
+2022-02-05 16:28:15,170 INFO 14438 [egg-view-nunjucks] loading templates from ["/Users/feiyyx/Desktop/development/blogv2/app/view"]
+2022-02-05 17:21:53,169 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 17:21:53,171 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 17:32:04,149 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 17:32:04,150 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 17:42:14,019 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 17:42:15,151 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 17:52:26,166 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 18:02:36,003 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 18:02:36,003 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 18:12:47,003 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 18:12:47,003 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 18:22:58,011 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 18:22:58,011 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 18:33:11,148 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 18:33:11,148 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 18:43:21,003 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 18:43:21,004 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 18:53:32,014 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 18:53:32,014 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:00:01,012 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 19:00:01,012 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:10:17,003 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:20:27,013 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 19:20:27,013 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:27:53,004 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 19:27:53,004 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:38:05,003 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 19:38:05,011 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:48:16,015 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 19:48:16,015 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 19:58:27,010 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 19:58:27,011 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 20:08:38,010 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 20:08:38,010 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 20:18:49,013 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 20:18:50,157 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 20:29:00,012 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 20:29:01,154 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 20:39:11,154 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 20:49:21,003 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 20:49:21,003 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 20:59:32,016 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 20:59:32,016 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 21:09:43,003 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 21:09:43,003 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 21:19:54,014 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 21:19:54,015 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 21:30:06,010 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 21:30:06,010 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 21:40:16,003 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 23:10:10,160 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 23:10:10,160 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 23:13:25,189 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 23:13:25,193 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-05 23:17:19,146 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-05 23:17:19,151 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-06 00:34:25,311 WARN 14438 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2022-02-06 00:34:25,326 WARN 14438 [ClusterClient:Watcher] follower closed, and try to init it again
+2022-02-06 00:34:25,562 INFO 14438 [egg-logrotator] clean all log before 31 days
+2022-02-06 00:34:25,565 INFO 14438 [egg-logrotator] broadcast log-reload
+2022-02-06 00:34:25,565 INFO 14438 [egg-logrotator] rotate files success by DayRotator, files ["/Users/feiyyx/Desktop/development/blogv2/logs/blogv2/common-error.log -> /Users/feiyyx/Desktop/development/blogv2/logs/blogv2/common-error.log.2022-02-05","/Users/feiyyx/Desktop/development/blogv2/logs/blogv2/blogv2-web.log -> /Users/feiyyx/Desktop/development/blogv2/logs/blogv2/blogv2-web.log.2022-02-05","/Users/feiyyx/Desktop/development/blogv2/logs/blogv2/egg-web.log -> /Users/feiyyx/Desktop/development/blogv2/logs/blogv2/egg-web.log.2022-02-05","/Users/feiyyx/Desktop/development/blogv2/logs/blogv2/egg-schedule.log -> /Users/feiyyx/Desktop/development/blogv2/logs/blogv2/egg-schedule.log.2022-02-05","/Users/feiyyx/Desktop/development/blogv2/logs/blogv2/egg-agent.log -> /Users/feiyyx/Desktop/development/blogv2/logs/blogv2/egg-agent.log.2022-02-05"]
