@@ -31,4 +31,5 @@ COPY . /service/blog
 EXPOSE 7001
 
 # 启动node应用
-CMD npm start
+CMD npm run tsc && \
+    npm start

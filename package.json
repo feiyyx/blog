@@ -8,8 +8,8 @@
     "declarations": true
   },
   "scripts": {
-    "start": "egg-scripts start --title=egg-server-blogv2",
-    "stop": "egg-scripts stop --title=egg-server-blogv2",
+    "start": "egg-scripts start --title=egg-server-blog",
+    "stop": "egg-scripts stop --title=egg-server-blog",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
