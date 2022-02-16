@@ -27,9 +27,9 @@ RUN npm i --registry=https://registry.npm.taobao.org
 # 拷贝所有源代码到工作目录
 COPY . /service/blog
 
+# TypeScript
+RUN npm run tsc
+
+CMD [ "npm", "start" ]
 # 暴露容器端口
 EXPOSE 7001
-
-# 启动node应用
-CMD npm run tsc && \
-    npm start
