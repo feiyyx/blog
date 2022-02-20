@@ -13,9 +13,8 @@
 <body>
     <div class="blog-main">
         <main class="blog-container">
-
             <div id="to-top" onclick="toTop()">
-                <img src="../images/top.png" alt="top">
+                <img src="../public/img/click2top_1.png" alt="top">
             </div>
             <header class="blog-header">
                 <h1 class="blog-title">
@@ -63,7 +62,7 @@
                 else if (document.body) {
                     top = document.body.scrollTop
                 }
-                if(top > 300) {
+                if(top > 50) {
                     document.getElementById('to-top').style.opacity = 1
                 }
                 else {

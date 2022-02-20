@@ -86,6 +86,16 @@ article > ul > li:nth-child(n) {
         justify-content: center;
         margin-top: 100px;
     }
+    /* 返回顶部 */
+    #to-top {
+        width: 100px;
+        height: 100px;
+    }
+
+    #to-top img {
+        width: 100px;
+        height: 100px;
+    }
 }
 /* 窗口大小 >= 600 and <= 1000 px */
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -99,6 +109,16 @@ article > ul > li:nth-child(n) {
             '. f .';
         justify-content: center;
         margin-top: 100px;
+    }
+
+    /* 返回顶部 */
+    #to-top {
+        width: 100px;
+        height: 100px;
+    }
+    #to-top img {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -114,6 +134,16 @@ article > ul > li:nth-child(n) {
             '. f .';
         justify-content: center;
         margin-top: 100px;
+    }
+    /* 返回顶部 */
+    #to-top {
+        width: 50px;
+        height: 50px;
+    }
+
+    #to-top img {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -207,12 +237,9 @@ article > ul > li:nth-child(n) {
 /* 返回顶部 */
 #to-top {
     position: fixed;
-    width: 100px;
-    height: 100px;
     right: 0;
     bottom: 0;
     opacity: 0;
-    background-color: #000;
 }
 
 /* 特殊类 */
