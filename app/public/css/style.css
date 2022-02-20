@@ -9,6 +9,11 @@ a {
     text-decoration: none;
 }
 
+/* 一般文章内的a标签都被包裹在p标签内 */
+p > a {
+    text-decoration-line: underline;
+}
+
 code {
     border-radius: 10px;
 }
@@ -68,16 +73,48 @@ article > ul > li:nth-child(n) {
     color: #aaa;
 }
 
-.blog-main .blog-container {
-    display: grid;
-    grid-template-columns: 20vw 50vw 20vw;
-    grid-template-rows: 8vw auto 5vw;
-    grid-template-areas: 
-        '. h .'
-        '. m .'
-        '. f .';
-    justify-content: center;
-    margin-top: 100px;
+/* 窗口大小 >= 1000 px */
+@media screen and (min-width: 1000px) {
+    .blog-main .blog-container {
+        display: grid;
+        grid-template-columns: 20vw 50vw 20vw;
+        grid-template-rows: 8vw auto 8vw;
+        grid-template-areas: 
+            '. h .'
+            '. m .'
+            '. f .';
+        justify-content: center;
+        margin-top: 100px;
+    }
+}
+/* 窗口大小 >= 600 and <= 1000 px */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    .blog-main .blog-container {
+        display: grid;
+        grid-template-columns: 20vw 50vw 20vw;
+        grid-template-rows: 15vw auto 8vw;
+        grid-template-areas: 
+            '. h .'
+            '. m .'
+            '. f .';
+        justify-content: center;
+        margin-top: 100px;
+    }
+}
+
+/* 窗口大小 <= 600 px */
+@media screen and (max-width: 600px) {
+    .blog-main .blog-container {
+        display: grid;
+        grid-template-columns: 7vw 76vw 7vw;
+        grid-template-rows: 38vw auto 15vw;
+        grid-template-areas: 
+            '. h .'
+            '. m .'
+            '. f .';
+        justify-content: center;
+        margin-top: 100px;
+    }
 }
 
 .blog-main .blog-container .blog-header {
@@ -90,9 +127,33 @@ article > ul > li:nth-child(n) {
 }
 
 .blog-main .blog-container .blog-footer {
+    text-align: center;
     margin-bottom: 4vw;
     grid-area: f;
+}
+.blog-footer.mg-4vw {
+    margin-top: 4vw;
+}
+
+/* footer */
+.blog-footer .footer-container {
+    margin: 0 auto;
     text-align: center;
+}
+.footer-container.footer-narrow {
+    width: 450px;
+}
+.footer-container .copyright {
+    float: left;
+}
+.footer-container .other-site {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    float: right;
+}
+.footer-container .other-site a img{
+    width: 20px;
+    height: 20px;
 }
 
 /* 文章列表 */

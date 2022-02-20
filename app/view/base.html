@@ -37,8 +37,18 @@
                 {% endblock %}
             </section>
         
-            <footer class="blog-footer">
-                <p>Copyright © 2017 - 2022 feiyyx. Made by <a href="https://github.com/" target="_blank">feiyyx</a>.</p>
+            <footer class="blog-footer {% if text or aboutme %}mg-4vw{% endif %}">
+                <div class="footer-container {% if articles %}footer-narrow{% endif %}">
+                    <p class="copyright">Copyright © 2017 - 2022 <a href="https://github.com/feiyyx/blog" target="_blank">feiyyx.</a></p>
+                    <nav class="other-site">
+                        <a href="https://github.com/feiyyx">
+                            <img src="../public/img/github.svg"/>
+                        </a>
+                        <a href="https://www.pixiv.net/users/6999089">
+                            <img src="../public/img/pixiv.svg"/>
+                        </a>
+                    </nav>
+                </div>
             </footer>
         </main>
     </div>
