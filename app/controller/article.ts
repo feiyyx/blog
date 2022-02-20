@@ -2,16 +2,11 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { Controller } from 'egg';
 import { marked } from 'marked';
-// import highlight from 'highlight.js';
 import { markdown } from '../lib/markdown';
 import { decodeDate } from '../lib/handleDate';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
-  // highlight: function(code, lang = 'javascript') {
-  //   if (lang === 'vue') lang = 'javascript';
-  //   return highlight.highlight(lang, code).value;
-  // },
   gfm: true, // 默认为true。 允许 Git Hub标准的markdown.
   breaks: false, // 默认为false。 允许回车换行。该选项要求 gfm 为true。
   pedantic: false, // 默认为false。 尽可能地兼容 markdown.pl的晦涩部分。不纠正原始模型任何的不良行为和错误。

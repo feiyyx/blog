@@ -2,3 +2,4 @@ node_modules/
 .github/
 logs/
 .vscode/
+run/

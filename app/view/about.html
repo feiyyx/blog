@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+{% block container %}
+{{ super() }}
+<div class="about-container">
+    <div class="about-wrapper">
+        {{ aboutme | safe  }}
+    </div>
+</div>
+{% endblock %}
