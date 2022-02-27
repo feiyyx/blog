@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { Controller } from 'egg';
+import BaseController from './articleListBase';
 import { marked } from 'marked';
 import { markdown } from '../lib/markdown';
 import { decodeDate } from '../lib/handleDate';
@@ -16,54 +16,63 @@ marked.setOptions({
 });
 
 
-export default class HomeController extends Controller {
+export default class ArticleController extends BaseController {
   public async index() {
-    const { ctx } = this;
-
     // 所有文章列表
-    const list = await markdown();
+    const articleListInfo = await super.showList();
 
-    console.log(list);
-
-    await ctx.render('index', {
+    await this.ctx.render('articleList', {
       title: `feiyyx's blog`,
-      articles: list.liveArticleList,
-      pagination: 10,
-      currentPage: 1,
-      totalPage: 8,
+      ...articleListInfo,
     });
   }
  
   public async show() {
     const { ctx } = this;
     const name = ctx.params.id;
+    if (Number.isInteger(+name)) {
+      const articleListInfo = await super.showList();
 
-    try {
-      // 所有文章列表
-      const list = await markdown();
+      return await this.ctx.render('articleList', {
+        title: `feiyyx's blog`,
+        ...articleListInfo,
+      });
+    } else {
+      try {
+        // 所有文章列表
+        const list = await markdown();
+    
+        // url解码文章名
+        const mdName = decodeURI(name);
+        const { techArticleList, liveArticleList } = list;
+        const allArticles = [ ...techArticleList, ...liveArticleList ];
+        const article = allArticles.find(v => v.title === mdName);
+        const time = decodeDate(article?.time);
+        const realName = `${time}@${article?.tag}@${article?.title}`;
   
-      // url解码文章名
-      const mdName = decodeURI(name);
-      const { techArticleList, liveArticleList } = list;
-      const allArticles = [ ...techArticleList, ...liveArticleList ];
-      const article = allArticles.find(v => v.title === mdName);
-      const time = decodeDate(article?.time);
-      const realName = `${time}@${article?.tag}@${article?.title}`;
-
-      // 读取文章字符串
-      const html = fs.readFileSync(path.join(__dirname, `../public/post/${realName}.md`), 'utf-8');
-
-      // md转换成html
-      const htmarkedHTMLml = marked(html);
-
-      // 填充至模板返回
-      await ctx.render('article', {
-        title: `${mdName.split('@')[2]} | feiyyx`,
-        text: htmarkedHTMLml,
-      })
-    } catch (error) {
-      console.log(error);
-      ctx.response.status = 404;
+        // 读取文章字符串
+        const html = fs.readFileSync(path.join(__dirname, `../public/post/${realName}.md`), 'utf-8');
+  
+        // md转换成html
+        const htmarkedHTMLml = marked(html);
+  
+        // 填充至模板返回
+        await ctx.render('article', {
+          title: `${mdName.split('@')[2]} | feiyyx`,
+          text: htmarkedHTMLml,
+        })
+      } catch (error) {
+        console.log(error);
+        ctx.response.status = 404;
+      }
     }
+  }
+
+  async showArticle() {
+
+  }
+
+  async showPage() {
+    
   }
 }

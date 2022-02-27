@@ -3,11 +3,17 @@
 
 import 'egg';
 import ExportArticle from '../../../app/controller/article';
+import ExportArticleListBase from '../../../app/controller/articleListBase';
 import ExportHome from '../../../app/controller/home';
+import ExportLiveArticle from '../../../app/controller/liveArticle';
+import ExportTechArticle from '../../../app/controller/techArticle';
 
 declare module 'egg' {
   interface IController {
     article: ExportArticle;
+    articleListBase: ExportArticleListBase;
     home: ExportHome;
+    liveArticle: ExportLiveArticle;
+    techArticle: ExportTechArticle;
   }
 }

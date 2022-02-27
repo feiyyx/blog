@@ -8,58 +8,38 @@
 
 {% block container %}
 {{ super() }}
-<div class="article-container">
+<div class="tech-article article-container">
     <div class="article-list-wrapper">
-        <h2 class="article-list-title">文章列表</h2>
+        <h2 class="article-list-title">
+            <a href='/article/tech'>Technology.</a>
+        </h2>
         <div class="article-list-container">
             <ul class="article-list">
-                {% for article in articles %}
+                {% for article in techArticles %}
                 <li class="article-list-item">
                     <span class="article-time">{{ article.time }}</span>
-                    <a href="../article/{{ article.title | urlencode }}" class="article-title">{{ article.title }}</a>
+                    <a href="/article/{{ article.title | urlencode }}" class="article-title">{{ article.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
         </div>
     </div>
-    <div class="article-pagination">
-        {% if currentPage > 1 %}
-            <a href="{{ currentPage - 1 }}" class="page-item">上一页</a>
-        {% endif %}
-
-        {% if currentPage === 1 %}
-            <a href="{{ 1 }}" class="page-item active">{{ 1 }}</a>
-        {% else %}
-            <a href="{{ 1 }}" class="page-item">1</a>
-        {% endif %}
-
-        {% for page in pagination %}
-            {% if (loop.first) and (+page - 1 > 1) %}
-                <span class="page-item">...</span>
-            {% endif %}
-
-            {% if page === currentPage %}
-                <a href="{{ page }}" class="page-item active">{{ page }}</a>
-            {% else %}
-                <a href="{{ page  }}" class="page-item">{{ page }}</a>
-            {% endif %}
-
-            {% if (loop.last) and (+page + 1 < totalPage) %}
-                <span class="page-item">...</span>
-            {% endif %}
-        {% endfor %}
-
-        {% if totalPage > 1 %}
-            {% if totalPage === currentPage %}
-                <a href="{{ totalPage }}" class="page-item active">{{ totalPage }}</a>
-            {% else %}
-                <a href="{{ totalPage  }}" class="page-item">{{ totalPage }}</a>
-            {% endif %}
-        {% endif %}
-
-        {% if currentPage < totalPage %}
-            <a href="{{ currentPage + 1 }}" class="page-item">下一页</a>
-        {% endif %}
+</div>
+<div class="live-article article-container">
+    <div class="article-list-wrapper">
+        <h2 class="article-list-title">
+            <a href='/article/live'>Live & Peace.</a>
+        </h2>
+        <div class="article-list-container">
+            <ul class="article-list">
+                {% for article in liveArticles %}
+                <li class="article-list-item">
+                    <span class="article-time">{{ article.time }}</span>
+                    <a href="/article/{{ article.title | urlencode }}" class="article-title">{{ article.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 {% endblock %}

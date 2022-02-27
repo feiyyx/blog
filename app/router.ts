@@ -5,6 +5,8 @@ export default (app: Application) => {
 
   router.get('/', controller.home.index);
   router.get('/about', controller.home.about);
+  router.resources('live', '/article/live', controller.liveArticle);
+  router.resources('tech', '/article/tech', controller.techArticle);
   router.resources('article', '/article', controller.article);
   router.resources('home', '/', controller.home);
 };

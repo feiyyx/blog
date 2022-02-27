@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/public/css/style.css">
     <title>{{ titile }}</title>
     {% endblock %}
 </head>
@@ -14,7 +14,7 @@
     <div class="blog-main">
         <main class="blog-container">
             <div id="to-top" onclick="toTop()">
-                <img src="../public/img/click2top_1.png" alt="top">
+                <!-- <img src="../public/img/click2top_1.png" alt="top"> -->
             </div>
             <header class="blog-header">
                 <h1 class="blog-title">
@@ -24,11 +24,13 @@
                     不会写文章的画师，不是一个好coder:P。
                 </div>
                 <div class="blog-link">
-                    <a href="../index">文章</a>
+                    <a href="/">首页</a>
                     <span class="link-seperate">/</span>
-                    <a href="../about">关于</a>
+                    <a href="/article/1">文章</a>
                     <span class="link-seperate">/</span>
-                    <a href="../link">友链</a>
+                    <a href="/about">关于</a>
+                    <span class="link-seperate">/</span>
+                    <a href="/link">友链</a>
                 </div>
             </header>
             <section class="blog-wrapper">
@@ -41,10 +43,10 @@
                     <p class="copyright">Copyright © 2017 - 2022 <a href="https://github.com/feiyyx/blog" target="_blank">feiyyx.</a></p>
                     <nav class="other-site">
                         <a href="https://github.com/feiyyx">
-                            <img src="../public/img/github.svg"/>
+                            <img src="/public/img/github.svg"/>
                         </a>
                         <a href="https://www.pixiv.net/users/6999089">
-                            <img src="../public/img/pixiv.svg"/>
+                            <img src="/public/img/pixiv.svg"/>
                         </a>
                     </nav>
                 </div>
@@ -53,20 +55,27 @@
     </div>
     {% block script %}
     <script type="text/javascript">
+        // todo 节流函数
+        let isAnimate = false;
         window.onload = function() {
             window.onscroll =  function () {
-                let top
+                const toTop = document.getElementById('to-top');
+                let top;
                 if (document.documentElement && document.documentElement.scrollTop) {
                     top = document.documentElement.scrollTop
-                }
-                else if (document.body) {
+                } else if (document.body) {
                     top = document.body.scrollTop
                 }
-                if(top > 50) {
-                    document.getElementById('to-top').style.opacity = 1
+                console.log(top, toTop.style.opacity )
+                if (top > 50 && !+toTop.style.opacity) {
+                    // 只有当已渲染元素的offset改变后才会再次调用动画
+                    toTop.classList.remove('to-top-animation');
+                    toTop.style.opacity = 1
+                    toTop.offsetWidth = toTop.offsetWidth;
+                    toTop.classList.add('to-top-animation');
                 }
-                else {
-                    document.getElementById('to-top').style.opacity = 0
+                if (top <= 50){
+                    toTop.style.opacity = 0
                 }
             }
         }

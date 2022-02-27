@@ -1,0 +1,17 @@
+.to-top-animation {
+    animation: to-top steps(1,end) 1.5s;
+    -webkit-animation: to-top steps(1,end) 1.5s;
+}
+
+@keyframes to-top{
+    0% { background-position: 0 0;  }
+    8% { background-position: 0 -100px; }
+    16% { background-position: 0 -200px; }
+    24% { background-position: 0 -300px; }
+    32% { background-position: 0 -400px; }
+    40% { background-position: 0 -500px; }
+    48% { background-position: 0 -600px; }
+    56% { background-position: 0 -700px; }
+    72% { background-position: 0 -800px; }
+    100% { background-position: 0 -900px; }
+}

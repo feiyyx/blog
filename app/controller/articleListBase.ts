@@ -1,5 +1,3 @@
-import * as fs from 'fs';
-import * as path from 'path';
 import { Controller } from 'egg';
 import { markdown } from '../lib/markdown';
 import { marked } from 'marked';
@@ -14,38 +12,38 @@ marked.setOptions({
   smartypants: false, // 使用更为时髦的标点，比如在引用语法中加入破折号。
 });
 
-export default class HomeController extends Controller {
+export default class ListBaseController extends Controller {
   // 暂时固定分页数量为 10篇/页
-  public async index() {
-    const { ctx } = this;
+  public async articleList(type: string = 'article') {
+    let articleList;
 
     // 所有文章列表
-    let techArticleList = await this.getAllArticleInfo(1, 'tech');
-    let liveArticleList = await this.getAllArticleInfo(1, 'live');
-    techArticleList = techArticleList.allArticles.slice(0, 10);
-    liveArticleList = liveArticleList.allArticles.slice(0, 10);
+    if (type === 'live') {
+        const liveArticleList = await this.getAllArticleInfo(1, 'live');
+        articleList = liveArticleList.allArticles.slice(0, 10);
+    } else if (type === 'tech') {
+        const techArticleList = await this.getAllArticleInfo(1, 'tech');
+        articleList = techArticleList.allArticles.slice(0, 10);
+    } else {
+        articleList = await this.getAllArticleInfo(1);
+        articleList = articleList.allArticles.slice(0, 10);
+    }
 
-    await ctx.render('index', {
-      title: `feiyyx's blog`,
-      techArticles: techArticleList,
-      liveArticles: liveArticleList,
-    });
-    // ctx.redirect(`https://www.google.co.kr/search?q=${q}`);
+    return articleList;
   }
 
-
-  public async show() {
+  public async showList(type: string = 'article') {
     const { ctx } = this;
     const currentPage = +ctx.params.id;
     if (!currentPage || !Number.isInteger(currentPage)) {
-      return ctx.redirect(`/`);
+      return ctx.redirect(`/${type}/`);
     }
 
     try {
-      const aritclesInfo = await this.getAllArticleInfo(currentPage);
+      const aritclesInfo = await this.getAllArticleInfo(currentPage, type);
       const { allArticles, totalPage, pagination } = aritclesInfo;
       if (currentPage > totalPage) {
-        return ctx.redirect(`/`);
+        return ctx.redirect(`/${type}/`);
       }
       const lastPage = currentPage - 1;
       const paginatingStart = currentPage === 1 ? lastPage * 10 : lastPage * 10 + 1
@@ -54,31 +52,16 @@ export default class HomeController extends Controller {
         .slice(paginatingStart, paginatingEnd)
         .filter(v => !!v);
 
-      await ctx.render('index', {
-        title: `feiyyx's blog`,
+      return {
         articles: articleList,
         pagination,
         currentPage,
         totalPage,
-      });
+      };
     } catch (error) {
       console.error(error);
       ctx.response.status = 404;
     }
-  }
-
-
-  public async about() {
-    const { ctx } = this;
-    const mkPath = '../public/post/other/aboutme.md';
-    
-    let aboutme = await fs.readFileSync(path.join(__dirname, mkPath), 'utf-8');
-    aboutme = marked(aboutme);
-
-    await ctx.render('about', {
-      title: `feiyyx's blog`,
-      aboutme,
-    });
   }
 
   getPagination(allArticles: Array<Object>, totalPage: number, currentPage: number) {
@@ -100,7 +83,7 @@ export default class HomeController extends Controller {
     }
   }
 
-  async getAllArticleInfo(currentPage: number, articleType: string = 'all') {
+  async getAllArticleInfo(currentPage: number, articleType: string = 'article') {
     let allArticles, totalPage, pagination;
     const list = await markdown();
     const { techArticleList, liveArticleList, allArticleList } = list;

@@ -15,7 +15,12 @@ p > a {
 }
 
 code {
-    border-radius: 10px;
+    margin-right: 3px;
+    padding: 3px 5px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    color: #000;
+    border: 2px solid #ccc
 }
 
 /* 引用样式 */
@@ -145,6 +150,10 @@ article > ul > li:nth-child(n) {
         width: 50px;
         height: 50px;
     }
+
+    .blog-wrapper  {
+        flex-direction: column;
+    }
 }
 
 .blog-main .blog-container .blog-header {
@@ -153,7 +162,14 @@ article > ul > li:nth-child(n) {
 }
 
 .blog-main .blog-container .blog-wrapper {
+    margin-top: 30px;
+    margin-bottom: 40px;
     grid-area: m;
+    display: flex;
+    justify-content: center;
+}
+.article-wide {
+    width: 450px;
 }
 
 .blog-main .blog-container .blog-footer {
@@ -189,10 +205,22 @@ article > ul > li:nth-child(n) {
 /* 文章列表 */
 .article-list-wrapper {
     text-align: left;
-    width: 450px;
+    width: 360px;
     margin: 0 auto;
 }
-.article-list-title {}
+.article-list-title.article-list-title-wide {
+    text-align: left;
+}
+.article-list-wrapper.article-list-wide {
+    width: 450px;
+}
+.article-list-title {
+    text-align: center;
+}
+
+.article-list-title.article-list-wide {
+    flex-basis: 340px;
+}
 .article-pagination {
     text-align: center;
 }
@@ -223,7 +251,7 @@ article > ul > li:nth-child(n) {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    flex-basis: 340px;
+    flex-basis: 250px;
 }
 
 .article-pagination {
@@ -240,7 +268,28 @@ article > ul > li:nth-child(n) {
     right: 0;
     bottom: 0;
     opacity: 0;
+    background-image: url("../img/sprite2.png");
+    background-position: 0 -900px;
 }
+
+.to-top-animation {
+    animation: to-top steps(1,end) 1.5s;
+    -webkit-animation: to-top steps(1,end) 1.5s;
+}
+
+@keyframes to-top{
+    0% { background-position: 0 0;  }
+    8% { background-position: 0 -100px; }
+    16% { background-position: 0 -200px; }
+    24% { background-position: 0 -300px; }
+    32% { background-position: 0 -400px; }
+    40% { background-position: 0 -500px; }
+    48% { background-position: 0 -600px; }
+    56% { background-position: 0 -700px; }
+    72% { background-position: 0 -800px; }
+    100% { background-position: 0 -900px; }
+}
+
 
 /* 特殊类 */
 .active {
@@ -251,3 +300,4 @@ article > ul > li:nth-child(n) {
 .hljs-ln-line:first-child {
     padding-right: 10px;
 }
+
