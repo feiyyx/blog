@@ -32,6 +32,12 @@
                     <span class="link-seperate">/</span>
                     <a href="/link">友链</a>
                 </div>
+                <div class="blog-search">
+                    <input class="blog-search-input" placeholder="让我康康"/>
+                    <span class="blog-search-icon" click="search">
+                        <img src="/public/img/search.svg"/>
+                    </span>
+                </div>
             </header>
             <section class="blog-wrapper">
                 {% block container %}
@@ -55,6 +61,15 @@
     </div>
     {% block script %}
     <script type="text/javascript">
+        const button = document.querySelector('.blog-search-icon');
+        document.addEventListener('keyup', function(event) {
+            // Number 13 is the "Enter" key on the keyboard
+            if (event.keyCode === 13) {
+                search();
+            }
+        });
+        button.addEventListener('click', search);
+
         // todo 节流函数
         let isAnimate = false;
         window.onload = function() {
@@ -66,7 +81,6 @@
                 } else if (document.body) {
                     top = document.body.scrollTop
                 }
-                console.log(top, toTop.style.opacity )
                 if (top > 50 && !+toTop.style.opacity) {
                     // 只有当已渲染元素的offset改变后才会再次调用动画
                     toTop.classList.remove('to-top-animation');
@@ -84,6 +98,12 @@
                 behavior: "smooth",
                 block: "start",
             });
+        }
+        function search() {
+            const dom = document.querySelector('.blog-search-input');
+            const params = dom.value;
+
+            window.open(`/search/${123}`);
         }
     </script>
     {% endblock %}

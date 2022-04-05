@@ -1,11 +1,3 @@
-﻿---
-title: React在TS环境下的爬坑手册<一>——Redux篇
-tags: 
-      - React
-      - TypeScript
-      - Redux
----
-
 React及Redux在TS环境下的爬坑手册<一>
 =================================
 
@@ -143,13 +135,14 @@ export type RootState = ReturnType<typeof rootReducer>
     - 掘金 [Typescript 中的 interface 和 type 到底有什么区别][4]
     - 简书 [typeScript interface和type区别][5]
     
+
 <br>
 上传于2020-08-19
 
 
-  [1]: https://cn.redux.js.org/
-  [2]: https://jkchao.github.io/typescript-book-chinese/jsx/reactJSX.html#%E5%BB%BA%E7%AB%8B
-  [3]: https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
-  [4]: https://juejin.im/post/6844903749501059085
-  [5]: https://www.jianshu.com/p/555e6998af36
-  [6]: https://redux.js.org/recipes/usage-with-typescript#overview
+[1]: https://cn.redux.js.org/
+[2]: https://jkchao.github.io/typescript-book-chinese/jsx/reactJSX.html#%E5%BB%BA%E7%AB%8B
+[3]: https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types
+[4]: https://juejin.im/post/6844903749501059085
+[5]: https://www.jianshu.com/p/555e6998af36
+[6]: https://redux.js.org/recipes/usage-with-typescript#overview
