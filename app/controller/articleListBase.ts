@@ -36,7 +36,7 @@ export default class ListBaseController extends Controller {
     const { ctx } = this;
     const currentPage = +ctx.params.id;
     if (!currentPage || !Number.isInteger(currentPage)) {
-      return ctx.redirect(`/${type}/`);
+      return ctx.redirect(`/${type}/1`);
     }
 
     try {

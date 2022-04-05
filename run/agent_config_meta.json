@@ -197,6 +197,7 @@
     "dependencies": {
       "@types/highlight.js": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
       "egg": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+      "egg-es": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
       "egg-view-nunjucks": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
       "highlight.js": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
