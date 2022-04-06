@@ -11,6 +11,16 @@ export default (appInfo: EggAppInfo) => {
   // add your egg config in here
   config.middleware = [];
 
+  config.sequelize = {
+        // 单数据库信息配置
+        dialect: 'mysql',
+        host: '175.178.27.94',
+        port: 3306,
+        database: 'blog',
+        username: 'feiyyx',
+        password: 'uaeqnk55',
+  };
+
   config.view = {
     root: [
       path.join(appInfo.baseDir, 'app/view'),
