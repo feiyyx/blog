@@ -10,7 +10,7 @@ export const markdown = async () => {
   // 筛选.md后缀
   const markdownList = fileList.filter(filename => path.extname(filename) === '.md');
 
-  const articleList = markdownList.map(file => {
+  const articleList = markdownList.map((file) => {
     const filename = path.basename(file, '.md');
     const temp = filename.split('@');
     const [ , tag, title ] = temp;
@@ -21,6 +21,7 @@ export const markdown = async () => {
       time,
       tag,
       title,
+      rawTime: temp[0],
     };
   });
 

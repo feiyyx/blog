@@ -1,9 +1,8 @@
 import * as fs from 'fs';
-import * as path from 'path';
-import BaseController from './articleListBase';
 import { marked } from 'marked';
+import * as path from 'path';
 import { markdown } from '../lib/markdown';
-import { decodeDate } from '../lib/handleDate';
+import BaseController from './articleListBase';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -47,7 +46,7 @@ export default class ArticleController extends BaseController {
         const { techArticleList, liveArticleList } = list;
         const allArticles = [ ...techArticleList, ...liveArticleList ];
         const article = allArticles.find(v => v.title === mdName);
-        const time = decodeDate(article?.time);
+        const time = article?.rawTime;
         const realName = `${time}@${article?.tag}@${article?.title}`;
   
         // 读取文章字符串

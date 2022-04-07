@@ -18,6 +18,9 @@ module.exports = app => {
         content: {
             type: TEXT,
         },
+        hash: {
+            type: STRING(100),
+        },
         is_top: {
             type: INTEGER,
         },
@@ -27,8 +30,6 @@ module.exports = app => {
         update_time: {
             type: DATE,
         },
-    }, {
-        timestamps: false
     }, {
         timestamps: false
     });
