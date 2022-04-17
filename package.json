@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@types/highlight.js": "^10.1.0",
+    "axios": "^0.26.1",
     "egg": "^2.6.1",
     "egg-es": "^1.2.3",
     "egg-scripts": "^2.6.0",
@@ -32,6 +33,7 @@
     "mysql2": "^2.3.3"
   },
   "devDependencies": {
+    "@types/http-assert": "^1.5.3",
     "@types/marked": "^4.0.2",
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.10.14",

@@ -67,6 +67,19 @@ export default class HomeController extends Controller {
     }
   }
 
+  public async translate() {
+    const { ctx } = this;
+    const placeholder = `请输入要翻译的枚举值，一组枚举值由中文【，】【、】或者英文【,】，换行区分枚举组。\ne.g. 枚举类型,xx,yy,zz
+    水果，菠菜，生菜，包菜
+    肉类、猪肉、牛肉、羊肉
+    木材,橡木,金丝楠木`;
+    
+    await ctx.render('translate', {
+      title: `feiyyx's blog`,
+      searchNotDisplay: true,
+      placeholder,
+    });
+  }
 
   public async about() {
     const { ctx } = this;

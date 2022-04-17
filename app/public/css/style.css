@@ -55,6 +55,19 @@ article > ul > li:nth-child(n) {
     line-height: 1.5;
 }
 
+.is-none {
+    display: none;
+}
+
+.translate-content {
+    width: 720px;
+    height: 200px;
+}
+
+.translate-result {
+    margin-left: 20px;
+}
+
 /* 博客主体 */
 .blog-main {}
 
