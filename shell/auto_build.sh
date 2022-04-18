@@ -8,8 +8,12 @@ cd $local
 rm -rf "blog"
 git clone $repo
 
+# update auto.sh
+cd "./blog/shell"
+cp -f "./auto_build.sh" "/home/service/auto.sh"
+
 # docker build and run
-cd "./blog"
+cd "../"
 docker build -t node/blog .
 docker stop blog
 docker rm blog
