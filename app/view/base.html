@@ -32,7 +32,10 @@
                     <span class="link-seperate">/</span>
                     <a href="/link">友链</a>
                 </div>
-                <div class="blog-search">
+                <div class="
+                    blog-search
+                    {% if searchNotDisplay %}is-none{% endif %}
+                ">
                     <input class="blog-search-input" placeholder="让我康康"/>
                     <span class="blog-search-icon" click="search">
                         <img src="/public/img/search.svg"/>
