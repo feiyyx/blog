@@ -1,6 +1,6 @@
-import { Controller } from 'egg';
 import axios from "axios";
 import * as crypto from "crypto";
+import { Controller } from 'egg';
 const secret = 'NcPYr6No06Dg1DODGvrI';
 const url = 'https://fanyi-api.baidu.com/api/trans/vip/translate'; // baidu api
 
@@ -32,7 +32,7 @@ export default class ApiController extends Controller {
             console.log(`>>>>>>>>>>>>>> 翻译枚举值[${index}]: `, q);
             return axios.get(url ,{ params: query })
         })
-        
+
         try {
             let tranlateRes = await Promise.all(translateList);
             tranlateRes = tranlateRes.map((res, index)=> {
@@ -40,7 +40,9 @@ export default class ApiController extends Controller {
                 let content = res.data.trans_result[0].dst;
                 console.log(`<<<<<<<<<<<<<< 翻译结果[${index}]: `, content);
                 // 把一组枚举重新化成数组
-                content = content.split(', ').filter(v => !!v);
+                content = content.split(', ')
+                    .map(v => v.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase())) // 将所有首字母全部大写
+                    .filter(v => !!v);
                 // 在这一步化为代码
                 content = this.formatCode(content);
 

@@ -32,23 +32,24 @@ export default class FooBoot implements IBoot {
                 hash,
                 content: htmarkedHTMLml,
             });
-        } else if (articleInfo?.hash !== hash) {
-            const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
-            // md转换成html
-            const htmarkedHTMLml = marked(html);
-            const hash = crypto.createHash('md5').update(htmarkedHTMLml).digest('hex');
-            return this.app.model.Articles.update(
-                {
-                    content: htmarkedHTMLml,
-                    hash,
-                },
-                {
-                    where: {
-                        id: articleInfo.id,
-                    },
-                }
-            );
         }
+        // } else if (articleInfo?.hash !== hash) {
+        //     const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
+        //     // md转换成html
+        //     const htmarkedHTMLml = marked(html);
+        //     const hash = crypto.createHash('md5').update(htmarkedHTMLml).digest('hex');
+        //     return this.app.model.Articles.update(
+        //         {
+        //             content: htmarkedHTMLml,
+        //             hash,
+        //         },
+        //         {
+        //             where: {
+        //                 id: articleInfo.id,
+        //             },
+        //         }
+        //     );
+        // }
         return null;
     })
   }

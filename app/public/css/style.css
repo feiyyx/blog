@@ -20,7 +20,7 @@ code {
     background-color: #f3f3f3;
     border-radius: 5px;
     color: #000;
-    border: 2px solid #ccc
+    border: 2px solid #ccc;
 }
 
 /* 引用样式 */
@@ -38,7 +38,7 @@ blockquote > p {
 
 blockquote:after {
     display: block;
-    content: "";
+    content: '';
 }
 
 img {
@@ -68,8 +68,13 @@ article > ul > li:nth-child(n) {
     margin-left: 20px;
 }
 
+.blog-translate-page-box {
+    width: 100%;
+}
+
 /* 博客主体 */
-.blog-main {}
+.blog-main {
+}
 
 .blog-title {
     margin-block-start: 0;
@@ -97,7 +102,7 @@ article > ul > li:nth-child(n) {
         display: grid;
         grid-template-columns: 20vw 50vw 20vw;
         grid-template-rows: 8vw auto 8vw;
-        grid-template-areas: 
+        grid-template-areas:
             '. h .'
             '. m .'
             '. f .';
@@ -121,7 +126,7 @@ article > ul > li:nth-child(n) {
         display: grid;
         grid-template-columns: 20vw 50vw 20vw;
         grid-template-rows: 15vw auto 8vw;
-        grid-template-areas: 
+        grid-template-areas:
             '. h .'
             '. m .'
             '. f .';
@@ -146,7 +151,7 @@ article > ul > li:nth-child(n) {
         display: grid;
         grid-template-columns: 7vw 76vw 7vw;
         grid-template-rows: 38vw auto 15vw;
-        grid-template-areas: 
+        grid-template-areas:
             '. h .'
             '. m .'
             '. f .';
@@ -164,7 +169,7 @@ article > ul > li:nth-child(n) {
         height: 50px;
     }
 
-    .blog-wrapper  {
+    .blog-wrapper {
         flex-direction: column;
     }
 }
@@ -204,7 +209,6 @@ article > ul > li:nth-child(n) {
     align-items: center;
     justify-content: center;
 }
-
 
 .blog-search .blog-search-icon img {
     width: 28px;
@@ -247,7 +251,7 @@ article > ul > li:nth-child(n) {
     margin-block-end: 1em;
     float: right;
 }
-.footer-container .other-site a img{
+.footer-container .other-site a img {
     width: 20px;
     height: 20px;
 }
@@ -287,7 +291,7 @@ article > ul > li:nth-child(n) {
     flex-basis: 110px;
     margin-right: 10px;
     font-size: 14px;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: 'Lucida Console', Monaco, monospace;
     font-weight: bold;
 }
 
@@ -315,7 +319,7 @@ article > ul > li:nth-child(n) {
     margin-top: 50px;
 }
 
-.page-item:nth-child(n+1) {
+.page-item:nth-child(n + 1) {
     margin-left: 2vw;
 }
 
@@ -325,28 +329,47 @@ article > ul > li:nth-child(n) {
     right: 0;
     bottom: 0;
     opacity: 0;
-    background-image: url("../img/sprite2.png");
+    background-image: url('../img/sprite2.png');
     background-position: 0 -900px;
 }
 
 .to-top-animation {
-    animation: to-top steps(1,end) 1.5s;
-    -webkit-animation: to-top steps(1,end) 1.5s;
+    animation: to-top steps(1, end) 1.5s;
+    -webkit-animation: to-top steps(1, end) 1.5s;
 }
 
-@keyframes to-top{
-    0% { background-position: 0 0;  }
-    8% { background-position: 0 -100px; }
-    16% { background-position: 0 -200px; }
-    24% { background-position: 0 -300px; }
-    32% { background-position: 0 -400px; }
-    40% { background-position: 0 -500px; }
-    48% { background-position: 0 -600px; }
-    56% { background-position: 0 -700px; }
-    72% { background-position: 0 -800px; }
-    100% { background-position: 0 -900px; }
+@keyframes to-top {
+    0% {
+        background-position: 0 0;
+    }
+    8% {
+        background-position: 0 -100px;
+    }
+    16% {
+        background-position: 0 -200px;
+    }
+    24% {
+        background-position: 0 -300px;
+    }
+    32% {
+        background-position: 0 -400px;
+    }
+    40% {
+        background-position: 0 -500px;
+    }
+    48% {
+        background-position: 0 -600px;
+    }
+    56% {
+        background-position: 0 -700px;
+    }
+    72% {
+        background-position: 0 -800px;
+    }
+    100% {
+        background-position: 0 -900px;
+    }
 }
-
 
 /* 特殊类 */
 .active {
@@ -357,4 +380,3 @@ article > ul > li:nth-child(n) {
 .hljs-ln-line:first-child {
     padding-right: 10px;
 }
-

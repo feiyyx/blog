@@ -1,49 +1,48 @@
-{% extends "base.html" %}
-
-{% block header %}
-{{ super() }}
+{% extends "base.html" %} {% block header %} {{ super() }}
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-{% endblock %}
-
-{% block container %}
-<div class="blog-page-box">
+{% endblock %} {% block container %}
+<div class="blog-translate-page-box">
     <button class="translate">翻译成代码</button>
-    <div>
-        <textarea class="translate-content" placeholder="{{ placeholder }}"></textarea>
+    <div class="translate-item">
+        <textarea
+            class="translate-content"
+            placeholder="{{ placeholder }}"
+        ></textarea>
     </div>
-    <div>
+    <div class="translate-item">
         <h3>翻译结果：</h3>
         <div class="translate-result">无</div>
-        <textarea id="result" class="translate-content" placeholder="翻译结果" readonly></textarea>
+        <textarea
+            id="result"
+            class="translate-content"
+            placeholder="翻译结果"
+            readonly
+        ></textarea>
     </div>
 </div>
-{% endblock %}
-
-{% block script %}
+{% endblock %} {% block script %}
 <script>
-
-$(function() {
-    $('.translate')
-        .click((e) => {
+    $(function () {
+        $('.translate').click((e) => {
             event.preventDefault();
             const params = {
                 content: '',
-            }
+            };
             params.content = $('.translate-content').val();
-        
+
             $.get(
                 '/api/translate',
                 params,
                 (data) => {
-                    console.log(data)
+                    console.log(data);
                     $('#result').val(data.message.join('\n'));
-                    $("#result").select();
+                    $('#result').select();
                     document.execCommand('copy');
                     alert('翻译成功，翻译结果代码已粘贴至剪切板');
                 },
-                'json'
-            )
+                'json',
+            );
+        });
     });
-});
 </script>
 {% endblock %}
