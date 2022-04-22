@@ -4,6 +4,7 @@ import * as fs from 'fs';
 import { marked } from 'marked';
 import * as path from 'path';
 import { markdown } from './app/lib/markdown';
+let newCount = 0, updateCount = 0;
 export default class FooBoot implements IBoot {
   private readonly app: Application;
 
@@ -25,31 +26,32 @@ export default class FooBoot implements IBoot {
             const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
             // md转换成html
             const htmarkedHTMLml = marked(html);
-            const hash = crypto.createHash('md5').update(htmarkedHTMLml).digest('hex');
+            const hash = crypto.createHash('md5').update(html).digest('hex');
+            newCount++;
             return this.app.model.Articles.create({
                 title,
                 tag,
                 hash,
                 content: htmarkedHTMLml,
             });
+        } else if (articleInfo?.hash !== hash) {
+            updateCount++;
+            const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
+            // md转换成html
+            const htmarkedHTMLml = marked(html);
+            const hash = crypto.createHash('md5').update(html).digest('hex');
+            return this.app.model.Articles.update(
+                {
+                    content: htmarkedHTMLml,
+                    hash,
+                },
+                {
+                    where: {
+                        id: articleInfo.id,
+                    },
+                }
+            );
         }
-        // } else if (articleInfo?.hash !== hash) {
-        //     const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
-        //     // md转换成html
-        //     const htmarkedHTMLml = marked(html);
-        //     const hash = crypto.createHash('md5').update(htmarkedHTMLml).digest('hex');
-        //     return this.app.model.Articles.update(
-        //         {
-        //             content: htmarkedHTMLml,
-        //             hash,
-        //         },
-        //         {
-        //             where: {
-        //                 id: articleInfo.id,
-        //             },
-        //         }
-        //     );
-        // }
         return null;
     })
   }
@@ -64,6 +66,12 @@ export default class FooBoot implements IBoot {
         throw new Error(e + '\n>>>>>>>>>>> 检查文章数据失败 >>>>>>>>>>>')
     }
     console.log('>>>>>>>>>>> 检查文章数据成功！ >>>>>>>>>>>')
+    if (newCount) {
+        console.log(`>>>>>>>>>>> 共新增 ${newCount} 篇文章 >>>>>>>>>>>`)
+    }
+    if (updateCount) {
+        console.log(`>>>>>>>>>>> 共修改 ${updateCount} 篇文章 >>>>>>>>>>>`)
+    }
     // All plugins have started, can do some thing before app ready.
   }
 //   async didReady() {

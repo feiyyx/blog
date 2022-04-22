@@ -1,5 +1,6 @@
 import fs = require('fs');
 import path = require('path');
+import * as crypto from "crypto";
 import { encodeDate } from './handleDate';
 
 const mkPath = '../public/post';
@@ -12,6 +13,10 @@ export const markdown = async () => {
 
   const articleList = markdownList.map((file) => {
     const filename = path.basename(file, '.md');
+
+    const html = fs.readFileSync(path.join(__dirname, `../public/post/${file}`), 'utf-8');
+    // md转换成html
+    const hash = crypto.createHash('md5').update(html).digest('hex');
     const temp = filename.split('@');
     const [ , tag, title ] = temp;
     let time = temp[0];
@@ -22,6 +27,7 @@ export const markdown = async () => {
       tag,
       title,
       rawTime: temp[0],
+      hash,
     };
   });
 

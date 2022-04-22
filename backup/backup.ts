@@ -1,14 +1,8 @@
+// article手动分页backup代码
+// 如果三个月以上用不到就删了吧
 import { Controller } from 'egg';
 import { marked } from 'marked';
-
-interface sqlQuery {
-    limit: number;
-    offset: number;
-    order:Array <Array <string>>;
-    raw: boolean;
-    where?: undefined | object;
-    attributes?: undefined | Array<string>;
-}
+import { markdown } from '../lib/markdown';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -21,25 +15,17 @@ marked.setOptions({
 });
 
 export default class ListBaseController extends Controller {
-    get pageSize() {
-        return 10;
-    }
   // 暂时固定分页数量为 10篇/页
   public async articleList(type: string = 'article') {
     let articleList;
 
     // 所有文章列表
-    if (type) {
-        articleList = await this.app.model.Articles.findAll({
-            where: {
-                tag: type,
-            },
-            limit: this.pageSize,
-            order:[
-                ["id","DESC"]
-            ],
-            raw: true,
-        })
+    if (type === 'live') {
+        const liveArticleList = await this.getAllArticleInfo(1, 'live');
+        articleList = liveArticleList.allArticles.slice(0, 10);
+    } else if (type === 'tech') {
+        const techArticleList = await this.getAllArticleInfo(1, 'tech');
+        articleList = techArticleList.allArticles.slice(0, 10);
     } else {
         articleList = await this.getAllArticleInfo(1);
         articleList = articleList.allArticles.slice(0, 10);
@@ -57,10 +43,16 @@ export default class ListBaseController extends Controller {
 
     try {
       const aritclesInfo = await this.getAllArticleInfo(currentPage, type);
-      const { allArticles: articleList, totalPage, pagination } = aritclesInfo;
+      const { allArticles, totalPage, pagination } = aritclesInfo;
       if (currentPage > totalPage) {
         return ctx.redirect(`/${type}/`);
       }
+      const lastPage = currentPage - 1;
+      const paginatingStart = currentPage === 1 ? lastPage * 10 : lastPage * 10 + 1
+      const paginatingEnd = currentPage === 1 ? currentPage * 10 : currentPage * 10 + 1
+      const articleList = allArticles
+        .slice(paginatingStart, paginatingEnd)
+        .filter(v => !!v);
 
       return {
         articles: articleList,
@@ -74,8 +66,8 @@ export default class ListBaseController extends Controller {
     }
   }
 
-  getPagination(total: number, totalPage: number, currentPage: number) {
-    const length = total;
+  getPagination(allArticles: Array<Object>, totalPage: number, currentPage: number) {
+    const length = allArticles.length;
     if (length < 20) {
       return [];
     } else if (length < 10 * 3) {
@@ -95,23 +87,23 @@ export default class ListBaseController extends Controller {
 
   async getAllArticleInfo(currentPage: number, articleType: string = 'article') {
     let allArticles, totalPage, pagination;
-    let query: sqlQuery = {
-        limit: this.pageSize,
-        offset: (currentPage - 1 ) * this.pageSize,
-        order:[
-            ["id","DESC"]
-        ],
-        raw: true,
-    };
-    if (articleType !== 'article') { 
-        query.where = {
-            tag: articleType,
-        }
+    const list = await markdown();
+    const { techArticleList, liveArticleList, allArticleList } = list;
+    if (articleType === 'live') { 
+      allArticles = liveArticleList.reverse();
+      totalPage = Math.ceil(allArticles.length / 10);
+      pagination = this.getPagination(allArticles, totalPage, currentPage);
+    } else if (articleType === 'tech') {
+      allArticles = techArticleList.reverse();
+      totalPage = Math.ceil(allArticles.length / 10);
+      pagination = this.getPagination(allArticles, totalPage, currentPage);
+    } else {
+      // 兜底为all类型
+      allArticles = allArticleList.reverse();
+      totalPage = Math.ceil(allArticles.length / 10);
+      pagination = this.getPagination(allArticles, totalPage, currentPage);
     }
-    const res = await this.app.model.Articles.findAndCountAll(query);
-    allArticles = res.rows;
-    totalPage = Math.ceil(+res.count / 10);
-    pagination = this.getPagination(+res.count, totalPage, currentPage);
+    
     return {
       allArticles,
       totalPage,
