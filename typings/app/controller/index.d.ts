@@ -5,9 +5,9 @@ import 'egg';
 import ExportApi from '../../../app/controller/api';
 import ExportArticle from '../../../app/controller/article';
 import ExportArticleListBase from '../../../app/controller/articleListBase';
-import ExportBackup from '../../../app/controller/backup';
 import ExportHome from '../../../app/controller/home';
 import ExportLiveArticle from '../../../app/controller/liveArticle';
+import ExportSearch from '../../../app/controller/search';
 import ExportTechArticle from '../../../app/controller/techArticle';
 
 declare module 'egg' {
@@ -15,9 +15,9 @@ declare module 'egg' {
     api: ExportApi;
     article: ExportArticle;
     articleListBase: ExportArticleListBase;
-    backup: ExportBackup;
     home: ExportHome;
     liveArticle: ExportLiveArticle;
+    search: ExportSearch;
     techArticle: ExportTechArticle;
   }
 }

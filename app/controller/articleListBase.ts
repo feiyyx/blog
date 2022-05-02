@@ -1,14 +1,6 @@
 import { Controller } from 'egg';
 import { marked } from 'marked';
-
-interface sqlQuery {
-    limit: number;
-    offset: number;
-    order:Array <Array <string>>;
-    raw: boolean;
-    where?: undefined | object;
-    attributes?: undefined | Array<string>;
-}
+import { articlePlusTime } from '../interface/sql';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -24,6 +16,10 @@ export default class ListBaseController extends Controller {
     get pageSize() {
         return 10;
     }
+
+    get articleService() {
+        return this.ctx.service.article;
+    }
   // 暂时固定分页数量为 10篇/页
   public async articleList(type: string = 'article') {
     let articleList;
@@ -36,21 +32,19 @@ export default class ListBaseController extends Controller {
             },
             limit: this.pageSize,
             order:[
-                ["id","DESC"]
+                ["create_time","DESC"]
             ],
             raw: true,
         })
     } else {
         articleList = await this.getAllArticleInfo(1);
-        articleList = articleList.allArticles.slice(0, 10);
     }
 
     return articleList;
   }
 
-  public async showList(type: string = 'article') {
+  public async showList(currentPage: number = 1,type: string = 'article'): Promise<any> {
     const { ctx } = this;
-    const currentPage = +ctx.params.id;
     if (!currentPage || !Number.isInteger(currentPage)) {
       return ctx.redirect(`/${type}/1`);
     }
@@ -59,7 +53,7 @@ export default class ListBaseController extends Controller {
       const aritclesInfo = await this.getAllArticleInfo(currentPage, type);
       const { allArticles: articleList, totalPage, pagination } = aritclesInfo;
       if (currentPage > totalPage) {
-        return ctx.redirect(`/${type}/`);
+        return ctx.redirect(`/${type}/1`);
       }
 
       return {
@@ -74,54 +68,15 @@ export default class ListBaseController extends Controller {
     }
   }
 
-  getPagination(total: number, totalPage: number, currentPage: number) {
-    const length = total;
-    if (length < 20) {
-      return [];
-    } else if (length < 10 * 3) {
-      return [2];
-    } else {
-      if (currentPage === 1 || currentPage === 2) {
-        return [2, 3];
-      } else if (currentPage === totalPage) {
-        return this.range(currentPage - 2, totalPage);
-      } else if (currentPage >= 3 && currentPage > totalPage - 2) {
-        return this.range(currentPage - 1, totalPage);
-      } else if (currentPage >= 3 && currentPage < totalPage) {
-        return this.range(currentPage - 1, currentPage + 2);
-      }
-    }
-  }
 
   async getAllArticleInfo(currentPage: number, articleType: string = 'article') {
-    let allArticles, totalPage, pagination;
-    let query: sqlQuery = {
-        limit: this.pageSize,
-        offset: (currentPage - 1 ) * this.pageSize,
-        order:[
-            ["id","DESC"]
-        ],
-        raw: true,
-    };
-    if (articleType !== 'article') { 
-        query.where = {
-            tag: articleType,
-        }
-    }
-    const res = await this.app.model.Articles.findAndCountAll(query);
-    allArticles = res.rows;
-    totalPage = Math.ceil(+res.count / 10);
-    pagination = this.getPagination(+res.count, totalPage, currentPage);
-    return {
-      allArticles,
-      totalPage,
-      pagination,
-    }
+    const res = await this.articleService.getArticleList(currentPage, articleType);
+    return res;
   }
 
-  range(start, stop) {
-    return Array(stop - start)
-      .fill(start)
-      .map((x, y) => x + y)
+
+  async getArticleInfo(name: string): Promise<articlePlusTime> {
+    const res = await this.articleService.getArticle(name);
+    return res;
   }
 }

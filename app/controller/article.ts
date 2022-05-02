@@ -1,8 +1,6 @@
-import * as fs from 'fs';
 import { marked } from 'marked';
-import * as path from 'path';
-import { markdown } from '../lib/markdown';
 import BaseController from './articleListBase';
+import { articlePlusTime } from '../interface/sql';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -28,42 +26,27 @@ export default class ArticleController extends BaseController {
  
   public async show() {
     const { ctx } = this;
-    const name = ctx.params.id;
-    if (Number.isInteger(+name)) {
-      const articleListInfo = await super.showList();
-
-      return await this.ctx.render('articleList', {
-        title: `feiyyx's blog`,
-        ...articleListInfo,
-      });
-    } else {
-      try {
-        // 所有文章列表
-        const list = await markdown();
-    
-        // url解码文章名
-        const mdName = decodeURI(name);
-        const { techArticleList, liveArticleList } = list;
-        const allArticles = [ ...techArticleList, ...liveArticleList ];
-        const article = allArticles.find(v => v.title === mdName);
-        const time = article?.rawTime;
-        const realName = `${time}@${article?.tag}@${article?.title}`;
-  
-        // 读取文章字符串
-        const html = fs.readFileSync(path.join(__dirname, `../public/post/${realName}.md`), 'utf-8');
-  
-        // md转换成html
-        const htmarkedHTMLml = marked(html);
-  
-        // 填充至模板返回
-        await ctx.render('article', {
-          title: `${mdName.split('@')[2]} | feiyyx`,
-          text: htmarkedHTMLml,
-        })
-      } catch (error) {
-        console.log(error);
-        ctx.response.status = 404;
+    const searchParam = ctx.params.id;
+    let articleListInfo: (articlePlusTime |Array<articlePlusTime>);
+    try {
+      if (Number.isInteger(+searchParam)) {
+        articleListInfo = await super.showList();
+        return this.ctx.render('articleList', {
+          title: `feiyyx's blog`,
+          ...articleListInfo,
+        });
+      } else {
+        // TODO ES搜索
+        articleListInfo = await super.getArticleInfo(searchParam);
+        return this.ctx.render('article', {
+          title: `${articleListInfo.title} | feiyyx's blog`,
+          time: articleListInfo.time,
+          text: articleListInfo.content,
+        });
       }
+    } catch (error) {
+      console.error(error);
+      ctx.response.status = 404;
     }
   }
 

@@ -78,28 +78,28 @@ export default class ApiController extends Controller {
     }
 }
 
-function generateCode(enumZh, enumEn) {
-    const enumZhArr = enumZh;
-    const enumEnArr = enumEn;
-    const enumTypeName = enumEnArr[0].replace(' ', '_').toUpperCase();
-    const enumList = [];
-    const enumMap = [];
-    const enumi18nZh = [];
-    const enumi18nEn = [];
-    enumEnArr.map((val, index) => {
-        if (index === 0) return; // 跳过枚举类型
-        // 将单词变成下划线大写格式
-        const enumName = val.replace(' ', '_').toUpperCase();
-        enumList.push(`\t${enumName}: ${index - 1},`); // key: val
-        enumMap.push(`\t[${enumTypeName}.${enumName}]: '${val}',`); // [enum.key]: key
-        enumi18nZh.push(`'${enumZhArr[index]}': '${val}',`);
-        enumi18nEn.push(`'${val}': '${val}',`);
-    });
-    return `// ${
-        enumZhArr[0]
-    }\nexport const ${enumTypeName} = {\n${enumList.join(
-        '\n',
-    )}\n};\nexport const ${enumTypeName}_MAP = {\n${enumMap.join(
-        '\n',
-    )}\n};\n\n\n${enumi18nZh.join('\n')}\n${enumi18nEn.join('\n')}`;
-}
+// function generateCode(enumZh, enumEn) {
+//     const enumZhArr = enumZh;
+//     const enumEnArr = enumEn;
+//     const enumTypeName = enumEnArr[0].replace(' ', '_').toUpperCase();
+//     const enumList = [];
+//     const enumMap = [];
+//     const enumi18nZh = [];
+//     const enumi18nEn = [];
+//     enumEnArr.map((val, index) => {
+//         if (index === 0) return; // 跳过枚举类型
+//         // 将单词变成下划线大写格式
+//         const enumName = val.replace(' ', '_').toUpperCase();
+//         enumList.push(`\t${enumName}: ${index - 1},`); // key: val
+//         enumMap.push(`\t[${enumTypeName}.${enumName}]: '${val}',`); // [enum.key]: key
+//         enumi18nZh.push(`'${enumZhArr[index]}': '${val}',`);
+//         enumi18nEn.push(`'${val}': '${val}',`);
+//     });
+//     return `// ${
+//         enumZhArr[0]
+//     }\nexport const ${enumTypeName} = {\n${enumList.join(
+//         '\n',
+//     )}\n};\nexport const ${enumTypeName}_MAP = {\n${enumMap.join(
+//         '\n',
+//     )}\n};\n\n\n${enumi18nZh.join('\n')}\n${enumi18nEn.join('\n')}`;
+// }

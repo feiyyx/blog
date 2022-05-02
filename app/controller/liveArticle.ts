@@ -9,7 +9,7 @@ export default class ArticleController extends BaseController {
     ctx.params.id = 1;
 
     // 所有文章列表
-    const liveArticleListInfo = await super.showList(this.type);
+    const liveArticleListInfo = await super.showList(1, this.type);
     await ctx.render('articleList', {
       title: `feiyyx's blog`,
       type: this.type,
@@ -19,7 +19,7 @@ export default class ArticleController extends BaseController {
   }
  
   public async show() {
-    const liveArticleListInfo = await super.showList(this.type);
+    const liveArticleListInfo = await super.showList(1, this.type);
 
     await this.ctx.render('articleList', {
       title: `feiyyx's blog`,

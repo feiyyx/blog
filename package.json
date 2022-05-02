@@ -30,6 +30,7 @@
     "egg-sequelize": "^6.0.0",
     "egg-view-nunjucks": "^2.3.0",
     "highlight.js": "^11.4.0",
+    "moment": "^2.29.3",
     "mysql2": "^2.3.3",
     "sequelize": "^6.19.0"
   },
@@ -37,6 +38,7 @@
     "@types/http-assert": "^1.5.3",
     "@types/marked": "^4.0.2",
     "@types/mocha": "^2.2.40",
+    "@types/moment": "^2.13.0",
     "@types/node": "^7.10.14",
     "@types/supertest": "^2.0.0",
     "autod": "^3.0.1",
