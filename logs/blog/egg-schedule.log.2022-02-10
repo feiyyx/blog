@@ -1,9 +1,0 @@
-2022-02-10 05:40:58,862 INFO 18098 [Job#164444285861832383396338244793] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js executing by app
-2022-02-10 05:40:58,910 INFO 18098 [Job#164444285861832383396338244793] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js execute succeed, used 29ms. 
-2022-02-10 05:40:58,649 INFO 18097 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 82141372ms at 2022-02-11 04:30:00.020
-2022-02-11 00:22:23,231 INFO 18097 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 85056799ms at 2022-02-12 00:00:00.030
-2022-02-11 00:22:23,234 INFO 18097 [Timer] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 85057768ms at 2022-02-12 00:00:01.002
-2022-02-11 00:22:23,221 INFO 18098 [Job#164451014201833056241922347934] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js executing by app
-2022-02-11 00:22:23,243 INFO 18098 [Job#164451014201833056241922347934] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/clean_log.js execute succeed, used 21ms. 
-2022-02-11 00:22:23,244 INFO 18098 [Job#164451014323133056242419146394] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js executing by app
-2022-02-11 00:22:23,263 INFO 18098 [Job#164451014323133056242419146394] /Users/feiyyx/Desktop/development/blogv2/node_modules/egg-logrotator/app/schedule/rotate_by_file.js execute succeed, used 19ms. 

@@ -1,342 +1,342 @@
 {
-  "keys": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-  "middleware": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
+  "keys": "/Users/admin/work/blog/config/config.default.ts",
+  "middleware": "/Users/admin/work/blog/config/config.default.ts",
   "sequelize": {
-    "dialect": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-    "host": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-    "port": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-    "database": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-    "username": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-    "password": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts"
+    "dialect": "/Users/admin/work/blog/config/config.default.ts",
+    "host": "/Users/admin/work/blog/config/config.default.ts",
+    "port": "/Users/admin/work/blog/config/config.default.ts",
+    "database": "/Users/admin/work/blog/config/config.default.ts",
+    "username": "/Users/admin/work/blog/config/config.default.ts",
+    "password": "/Users/admin/work/blog/config/config.default.ts"
   },
   "view": {
-    "root": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
+    "root": "/Users/admin/work/blog/config/config.default.ts",
     "mapping": {
-      ".nj": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-      ".njk": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-      ".html": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts"
+      ".nj": "/Users/admin/work/blog/config/config.default.ts",
+      ".njk": "/Users/admin/work/blog/config/config.default.ts",
+      ".html": "/Users/admin/work/blog/config/config.default.ts"
     },
-    "defaultViewEngine": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
-    "cache": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view/config/config.local.js",
-    "defaultExtension": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view/config/config.default.js"
+    "defaultViewEngine": "/Users/admin/work/blog/config/config.default.ts",
+    "cache": "/Users/admin/work/blog/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/admin/work/blog/node_modules/egg-view/config/config.default.js"
   },
-  "sourceUrl": "/Users/feiyyx/Desktop/development/blog/config/config.default.ts",
+  "sourceUrl": "/Users/admin/work/blog/config/config.default.ts",
   "session": {
-    "maxAge": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-session/config/config.default.js",
-    "logValue": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-session/config/config.default.js"
+    "maxAge": "/Users/admin/work/blog/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/admin/work/blog/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/admin/work/blog/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/admin/work/blog/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/admin/work/blog/node_modules/egg-session/config/config.default.js"
   },
   "security": {
-    "domainWhiteList": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
     "csrf": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "type": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "ignoreJSON": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "useSession": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "cookieName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "sessionName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "headerName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "bodyName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "queryName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "refererWhiteList": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "type": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "xframe": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "hsts": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.local.js",
-      "maxAge": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "includeSubdomains": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "dta": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "methodnoallow": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "noopen": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "nosniff": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "referrerPolicy": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "xssProtection": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "value": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "csp": {
-      "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "policy": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "enable": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     },
     "ssrf": {
-      "ipBlackList": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "ipExceptionList": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js",
-      "checkAddress": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+      "ipBlackList": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
     }
   },
   "helper": {
-    "shtml": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security/config/config.default.js"
+    "shtml": "/Users/admin/work/blog/node_modules/egg-security/config/config.default.js"
   },
   "jsonp": {
-    "limit": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-jsonp/config/config.default.js",
-    "callback": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-jsonp/config/config.default.js",
-    "csrf": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-jsonp/config/config.default.js"
+    "limit": "/Users/admin/work/blog/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/admin/work/blog/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/admin/work/blog/node_modules/egg-jsonp/config/config.default.js"
   },
   "onerror": {
-    "errorPageUrl": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-onerror/config/config.default.js",
-    "appErrorFilter": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-onerror/config/config.default.js",
-    "templatePath": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-onerror/config/config.default.js"
+    "errorPageUrl": "/Users/admin/work/blog/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/admin/work/blog/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/admin/work/blog/node_modules/egg-onerror/config/config.default.js"
   },
   "i18n": {
-    "defaultLocale": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n/config/config.default.js",
-    "dirs": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n/config/config.default.js",
-    "queryField": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n/config/config.default.js",
-    "cookieField": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n/config/config.default.js",
-    "cookieDomain": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n/config/config.default.js",
-    "cookieMaxAge": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n/config/config.default.js"
+    "defaultLocale": "/Users/admin/work/blog/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/admin/work/blog/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/admin/work/blog/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/admin/work/blog/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/admin/work/blog/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/admin/work/blog/node_modules/egg-i18n/config/config.default.js"
   },
   "watcher": {
-    "type": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-watcher/config/config.local.js",
+    "type": "/Users/admin/work/blog/node_modules/egg-watcher/config/config.local.js",
     "eventSources": {
-      "default": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-watcher/config/config.default.js",
-      "development": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-watcher/config/config.default.js"
+      "default": "/Users/admin/work/blog/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/admin/work/blog/node_modules/egg-watcher/config/config.default.js"
     }
   },
   "customLogger": {
     "scheduleLogger": {
-      "consoleLevel": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-schedule/config/config.default.js",
-      "file": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-schedule/config/config.default.js"
+      "consoleLevel": "/Users/admin/work/blog/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/admin/work/blog/node_modules/egg-schedule/config/config.default.js"
     }
   },
   "schedule": {
-    "directory": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-schedule/config/config.default.js"
+    "directory": "/Users/admin/work/blog/node_modules/egg-schedule/config/config.default.js"
   },
   "multipart": {
-    "mode": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "autoFields": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "defaultCharset": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "fieldNameSize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "fieldSize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "fields": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "fileSize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "files": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "fileExtensions": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "whitelist": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "allowArrayField": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-    "tmpdir": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
+    "mode": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
     "cleanSchedule": {
-      "cron": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js",
-      "disable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart/config/config.default.js"
+      "cron": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/Users/admin/work/blog/node_modules/egg-multipart/config/config.default.js"
     }
   },
   "development": {
-    "watchDirs": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development/config/config.default.js",
-    "ignoreDirs": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development/config/config.default.js",
-    "fastReady": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development/config/config.default.js",
-    "reloadOnDebug": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development/config/config.default.js",
-    "overrideDefault": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development/config/config.default.js",
-    "overrideIgnore": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development/config/config.default.js"
+    "watchDirs": "/Users/admin/work/blog/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/admin/work/blog/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/admin/work/blog/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/admin/work/blog/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/admin/work/blog/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/Users/admin/work/blog/node_modules/egg-development/config/config.default.js"
   },
   "logrotator": {
-    "filesRotateByHour": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js",
-    "hourDelimiter": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js",
-    "filesRotateBySize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js",
-    "maxFileSize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js",
-    "maxFiles": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js",
-    "rotateDuration": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js",
-    "maxDays": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator/config/config.default.js"
+    "filesRotateByHour": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/admin/work/blog/node_modules/egg-logrotator/config/config.default.js"
   },
   "static": {
-    "prefix": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static/config/config.default.js",
-    "dir": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static/config/config.default.js",
-    "dynamic": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static/config/config.default.js",
-    "preload": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static/config/config.default.js",
-    "buffer": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static/config/config.default.js",
-    "maxFiles": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static/config/config.default.js"
+    "prefix": "/Users/admin/work/blog/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/admin/work/blog/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/admin/work/blog/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/admin/work/blog/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/admin/work/blog/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/admin/work/blog/node_modules/egg-static/config/config.default.js"
   },
   "nunjucks": {
-    "autoescape": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view-nunjucks/config/config.default.js",
-    "throwOnUndefined": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view-nunjucks/config/config.default.js",
-    "trimBlocks": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view-nunjucks/config/config.default.js",
-    "lstripBlocks": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view-nunjucks/config/config.default.js",
-    "cache": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view-nunjucks/config/config.local.js"
+    "autoescape": "/Users/admin/work/blog/node_modules/egg-view-nunjucks/config/config.default.js",
+    "throwOnUndefined": "/Users/admin/work/blog/node_modules/egg-view-nunjucks/config/config.default.js",
+    "trimBlocks": "/Users/admin/work/blog/node_modules/egg-view-nunjucks/config/config.default.js",
+    "lstripBlocks": "/Users/admin/work/blog/node_modules/egg-view-nunjucks/config/config.default.js",
+    "cache": "/Users/admin/work/blog/node_modules/egg-view-nunjucks/config/config.local.js"
   },
-  "env": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "name": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "cookies": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "proxy": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "maxIpsCount": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "maxProxyCount": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "protocolHeaders": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "ipHeaders": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "hostHeaders": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+  "env": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "name": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "cookies": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
   "pkg": {
-    "name": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "version": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "description": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "private": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+    "name": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "version": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "description": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "private": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
     "egg": {
-      "typescript": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "declarations": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "typescript": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "declarations": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "scripts": {
-      "start": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "stop": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "dev": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "debug": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "test-local": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "test": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "cov": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "tsc": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "ci": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "autod": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "lint": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "clean": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "start": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "stop": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "dev": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "debug": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "test": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "cov": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "tsc": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "ci": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "autod": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "lint": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "clean": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "dependencies": {
-      "@types/highlight.js": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "axios": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-es": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-scripts": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-sequelize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-view-nunjucks": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "highlight.js": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "moment": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "mysql2": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "sequelize": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "@types/highlight.js": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "axios": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-es": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-view-nunjucks": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "highlight.js": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "moment": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "mysql2": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "sequelize": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
-      "@types/http-assert": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "@types/marked": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "@types/mocha": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "@types/moment": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "@types/node": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "@types/supertest": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "autod": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "autod-egg": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-bin": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-ci": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "egg-mock": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "eslint": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "eslint-config-egg": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "marked": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "sequelize-cli": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "tslib": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "typescript": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "@types/http-assert": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "@types/marked": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "@types/mocha": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "@types/moment": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "@types/supertest": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "autod": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "eslint": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "eslint-config-egg": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "marked": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "sequelize-cli": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "tslib": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "engines": {
-      "node": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "node": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "ci": {
-      "version": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "version": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "repository": {
-      "type": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "url": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "type": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "url": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
-    "eslintIgnore": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "author": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "license": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "eslintIgnore": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "author": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "license": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
-  "baseDir": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "HOME": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "rundir": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+  "baseDir": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
   "dump": {
-    "ignore": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "ignore": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
   "confusedConfigurations": {
-    "bodyparser": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "notFound": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "sitefile": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "middlewares": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "httpClient": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "bodyparser": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
   "notfound": {
-    "pageUrl": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "pageUrl": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
   "siteFile": {
-    "/favicon.ico": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "/favicon.ico": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
   "bodyParser": {
-    "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "formLimit": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "jsonLimit": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "textLimit": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "strict": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+    "enable": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "strict": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
     "queryString": {
-      "arrayLimit": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "depth": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "parameterLimit": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "arrayLimit": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "depth": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
-    "onerror": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "onerror": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
   "logger": {
-    "dir": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "encoding": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "env": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "level": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "consoleLevel": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "disableConsoleAfterReady": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "outputJSON": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "buffer": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "appLogName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "coreLogName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "agentLogName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "errorLogName": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+    "dir": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "env": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "level": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
     "coreLogger": {
-      "consoleLevel": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.local.js"
+      "consoleLevel": "/Users/admin/work/blog/node_modules/egg/config/config.local.js"
     },
-    "allowDebugAtProd": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "enablePerformanceTimer": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "allowDebugAtProd": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
   "httpclient": {
-    "enableDNSCache": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "dnsCacheLookupInterval": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "dnsCacheMaxLength": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+    "enableDNSCache": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
     "request": {
-      "timeout": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "timeout": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "httpAgent": {
-      "keepAlive": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     },
     "httpsAgent": {
-      "keepAlive": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "freeSocketTimeout": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "maxSockets": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "maxFreeSockets": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "keepAlive": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     }
   },
   "meta": {
-    "enable": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "logging": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "enable": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "logging": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
-  "coreMiddleware": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "workerStartTimeout": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-  "serverTimeout": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
+  "coreMiddleware": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
   "cluster": {
     "listen": {
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "port": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-      "hostname": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+      "path": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "port": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
     }
   },
   "clusterClient": {
-    "maxWaitTime": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js",
-    "responseTimeout": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+    "maxWaitTime": "/Users/admin/work/blog/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
   },
-  "onClientError": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/config.default.js"
+  "onClientError": "/Users/admin/work/blog/node_modules/egg/config/config.default.js"
 }

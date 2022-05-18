@@ -77,7 +77,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/admin/work/blog/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -90,8 +90,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/admin/work/blog/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/admin/work/blog/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -115,7 +115,7 @@
       "fileExtensions": [],
       "whitelist": null,
       "allowArrayField": false,
-      "tmpdir": "/var/folders/xw/r4k841s50h1bwwn7sj6m6wfr0000gn/T/egg-multipart-tmp/blogv2",
+      "tmpdir": "/var/folders/qf/pnvvv29n6n5599tnp105bjfw0000gn/T/egg-multipart-tmp/blogv2",
       "cleanSchedule": {
         "cron": "0 30 4 * * *",
         "disable": false
@@ -140,14 +140,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/feiyyx/Desktop/development/blog/app/public",
+      "dir": "/Users/admin/work/blog/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/feiyyx/Desktop/development/blog/app/view",
+      "root": "/Users/admin/work/blog/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "nunjucks",
@@ -214,6 +214,7 @@
         "egg-sequelize": "^6.0.0",
         "egg-view-nunjucks": "^2.3.0",
         "highlight.js": "^11.4.0",
+        "moment": "^2.29.3",
         "mysql2": "^2.3.3",
         "sequelize": "^6.19.0"
       },
@@ -221,6 +222,7 @@
         "@types/http-assert": "^1.5.3",
         "@types/marked": "^4.0.2",
         "@types/mocha": "^2.2.40",
+        "@types/moment": "^2.13.0",
         "@types/node": "^7.10.14",
         "@types/supertest": "^2.0.0",
         "autod": "^3.0.1",
@@ -251,9 +253,9 @@
       "author": "feiyyx",
       "license": "MIT"
     },
-    "baseDir": "/Users/feiyyx/Desktop/development/blog",
-    "HOME": "/Users/feiyyx",
-    "rundir": "/Users/feiyyx/Desktop/development/blog/run",
+    "baseDir": "/Users/admin/work/blog",
+    "HOME": "/Users/admin",
+    "rundir": "/Users/admin/work/blog/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -285,7 +287,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/feiyyx/Desktop/development/blog/logs/blogv2",
+      "dir": "/Users/admin/work/blog/logs/blogv2",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -365,8 +367,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-onerror",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "session": {
@@ -376,8 +378,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-session",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-session",
       "version": "3.3.0"
     },
     "i18n": {
@@ -387,8 +389,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-i18n",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -398,8 +400,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-watcher",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-watcher",
       "version": "3.1.1"
     },
     "multipart": {
@@ -411,8 +413,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-multipart",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-multipart",
       "version": "2.13.1"
     },
     "security": {
@@ -424,8 +426,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-security",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-security",
       "version": "2.9.0"
     },
     "development": {
@@ -439,8 +441,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-development",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-development",
       "version": "2.7.0"
     },
     "logrotator": {
@@ -452,8 +454,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-logrotator",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "schedule": {
@@ -463,8 +465,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-schedule",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-schedule",
       "version": "3.6.6"
     },
     "static": {
@@ -474,8 +476,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-static",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-static",
       "version": "2.2.0"
     },
     "jsonp": {
@@ -487,8 +489,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-jsonp",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "view": {
@@ -498,8 +500,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/node_modules/egg/config/plugin.js",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view",
+      "from": "/Users/admin/work/blog/node_modules/egg/config/plugin.js",
+      "path": "/Users/admin/work/blog/node_modules/egg-view",
       "version": "2.1.3"
     },
     "nunjucks": {
@@ -512,8 +514,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/config/plugin.ts",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-view-nunjucks",
+      "from": "/Users/admin/work/blog/config/plugin.ts",
+      "path": "/Users/admin/work/blog/node_modules/egg-view-nunjucks",
       "version": "2.3.0"
     },
     "sequelize": {
@@ -523,8 +525,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/feiyyx/Desktop/development/blog/config/plugin.ts",
-      "path": "/Users/feiyyx/Desktop/development/blog/node_modules/egg-sequelize",
+      "from": "/Users/admin/work/blog/config/plugin.ts",
+      "path": "/Users/admin/work/blog/node_modules/egg-sequelize",
       "version": "6.0.0"
     }
   }
