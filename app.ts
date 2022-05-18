@@ -13,47 +13,49 @@ export default class FooBoot implements IBoot {
   }
 
   checkAndWrite(articleList) {
-    return articleList.map(async (article) => {
-        const { rawTime, tag, title, hash } = article;
-        const realName = `${rawTime}@${article?.tag}@${article?.title}`;
-        const articleInfo = await this.app.model.Articles.findOne({
-            where: {
-                title: article.title,
-            },
-            raw: true,
-        })
-        if (!articleInfo?.id) {
-            const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
-            // md转换成html
-            const htmarkedHTMLml = marked(html);
-            const hash = crypto.createHash('md5').update(html).digest('hex');
-            newCount++;
-            return this.app.model.Articles.create({
-                title,
-                tag,
-                hash,
-                content: htmarkedHTMLml,
-            });
-        } else if (articleInfo?.hash !== hash) {
-            updateCount++;
-            const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
-            // md转换成html
-            const htmarkedHTMLml = marked(html);
-            const hash = crypto.createHash('md5').update(html).digest('hex');
-            return this.app.model.Articles.update(
-                {
-                    content: htmarkedHTMLml,
-                    hash,
+      if (process.env.NODE_ENV === 'production') {
+        return articleList.map(async (article) => {
+            const { rawTime, tag, title, hash } = article;
+            const realName = `${rawTime}@${article?.tag}@${article?.title}`;
+            const articleInfo = await this.app.model.Articles.findOne({
+                where: {
+                    title: article.title,
                 },
-                {
-                    where: {
-                        id: articleInfo.id,
+                raw: true,
+            })
+            if (!articleInfo?.id) {
+                const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
+                // md转换成html
+                const htmarkedHTMLml = marked(html);
+                const hash = crypto.createHash('md5').update(html).digest('hex');
+                newCount++;
+                return this.app.model.Articles.create({
+                    title,
+                    tag,
+                    hash,
+                    content: htmarkedHTMLml,
+                });
+            } else if (articleInfo?.hash !== hash) {
+                updateCount++;
+                const html = fs.readFileSync(path.join(__dirname, `./app/public/post/${realName}.md`), 'utf-8');
+                // md转换成html
+                const htmarkedHTMLml = marked(html);
+                const hash = crypto.createHash('md5').update(html).digest('hex');
+                return this.app.model.Articles.update(
+                    {
+                        content: htmarkedHTMLml,
+                        hash,
                     },
-                }
-            );
-        }
-        return null;
-    })
+                    {
+                        where: {
+                            id: articleInfo.id,
+                        },
+                    }
+                );
+            }
+            return null;
+        })
+      }
   }
 
   async willReady() {
