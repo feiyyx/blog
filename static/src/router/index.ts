@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/loginPage/login-page.tsx'), // 使用 Vue 组件的方式加载登录页面
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
