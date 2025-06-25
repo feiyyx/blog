@@ -26,7 +26,6 @@ export default defineComponent({
 		});
 
 		const submitForm = (formEl: FormInstance | undefined) => {
-			console.log('test');
 			if (!formEl) {
 				return;
 			}
