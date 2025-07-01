@@ -1,8 +1,7 @@
-import ArticleList from '@/components/articleList/article-list.tsx';
-import ClientPageModel from '@/components/clientPageModel/client-page.tsx';
-import { ElPagination } from 'element-plus';
-import { defineComponent, ref } from 'vue';
-import styles from './home-page.module.css';
+import { ElRow } from 'element-plus';
+import { defineComponent, ref, renderSlot, SetupContext } from 'vue';
+import Profile from '../profile/profile.tsx';
+import styles from './client-page.module.css';
 
 const articles = ref([
 	{
@@ -76,23 +75,17 @@ const iconList = () => {
 
 export default defineComponent({
 	name: 'HomePage',
-	setup() {
+	setup(props: Readonly<any>, { slots }: SetupContext) {
 		return () => (
-			<ClientPageModel>
-				{{
-					mainPart: () => (
-						<div class={styles['home-page-main-wrapper']}>
-							<ArticleList articles={articles.value} />
-							<div class={styles['pagination']}>
-								<ElPagination
-									layout="prev, pager, next"
-									total={1000}
-								></ElPagination>
-							</div>
-						</div>
-					),
-				}}
-			</ClientPageModel>
+			<div class={styles['client-page-container']}>
+				<ElRow gutter={20}>
+					<Profile />
+					{/* 展示栏 */}
+					{renderSlot(slots, 'mainPart')}
+					{/* 目录栏 */}
+					{slots.rightPart ? renderSlot(slots, 'rightPart') : null}
+				</ElRow>
+			</div>
 		);
 	},
 });

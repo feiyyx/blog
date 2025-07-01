@@ -19,6 +19,11 @@ const router = createRouter({
 			component: () => import('../views/loginPage/login-page.tsx'),
 		},
 		{
+			path: '/article/:id',
+			name: 'article',
+			component: () => import('../views/articlePage/article-page.tsx'),
+		},
+		{
 			path: '/404',
 			name: '404',
 			meta: {

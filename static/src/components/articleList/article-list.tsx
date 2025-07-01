@@ -1,6 +1,5 @@
-import timeIcon from '@/assets/time.svg';
-import { formatDate } from '@/utils';
-import { ElButton, ElTag } from 'element-plus';
+import ArticleInfo from '@/components/articleInfo/article-info.tsx';
+import { ElButton } from 'element-plus';
 import type { PropType } from 'vue';
 import { defineComponent } from 'vue';
 import styles from './article-list.module.css';
@@ -31,23 +30,7 @@ export default defineComponent({
 						href={`/article/${article.id}`}
 					>
 						<h2 class={styles['article-list-title']}>{article.title}</h2>
-						<div class={styles['article-info']}>
-							<span class={styles['article-date']}>
-								<img class={styles['article-date-icon']} src={timeIcon} />
-								{formatDate(article.date)}
-							</span>
-							<span>
-								{article.category.map((cat) => (
-									<ElTag
-										key={cat + article.id}
-										class={styles['article-category-tag']}
-										size="default"
-									>
-										{cat}
-									</ElTag>
-								))}
-							</span>
-						</div>
+						<ArticleInfo date={article.date} category={article.category} />
 						<p class={styles['article-summary']}>{article.summary}</p>
 						<ElButton
 							type="primary"

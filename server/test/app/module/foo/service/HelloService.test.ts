@@ -1,11 +1,11 @@
-import { strict as assert } from 'node:assert';
 import { app } from '@eggjs/mock/bootstrap';
-import { HelloService } from '@/module/foo/service/HelloService';
+import { HelloService } from 'app/service/ArticleService';
+import { strict as assert } from 'node:assert';
 
 describe('test/app/module/foo/service/HelloService.test.js', () => {
-  it('should hello work', async () => {
-    const helloService = await app.getEggObject(HelloService);
-    const msg = await helloService.hello('123456');
-    assert.equal(msg, 'hello, 123456');
-  });
+    it('should hello work', async () => {
+        const helloService = await app.getEggObject(HelloService);
+        const msg = await helloService.hello('123456');
+        assert.equal(msg, 'hello, 123456');
+    });
 });
