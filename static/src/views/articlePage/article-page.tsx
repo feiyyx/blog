@@ -6,8 +6,8 @@ import { defineComponent, ref } from 'vue';
 import styles from './article-page.module.css';
 
 const toc = ref([
-	{ id: '1', title: '第一篇博客文章' },
-	{ id: '2', title: '第二篇博客文章' },
+  { id: '1', title: '第一篇博客文章' },
+  { id: '2', title: '第二篇博客文章' },
 ]);
 
 const scrollElement = document.documentElement;
@@ -85,53 +85,53 @@ multiArray([5,7,1]) // [[[0]*7]*5]
 <br>
 上传于2021-06-05`;
 const title = text.match(/#\s{1}.*\n/)
-	? text
-			.match(/#\s{1}.*\n/)[0]
-			.replace('# ', '')
-			.replace('\n', '')
-			.trim()
-	: '';
+  ? text
+      .match(/#\s{1}.*\n/)[0]
+      .replace('# ', '')
+      .replace('\n', '')
+      .trim()
+  : '';
 
 text = text
-	.replaceAll('<center>', '')
-	.replaceAll('</center>', '')
-	.replace(/#\s{1}.*\n/, '');
+  .replaceAll('<center>', '')
+  .replaceAll('</center>', '')
+  .replace(/#\s{1}.*\n/, '');
 const article = ref({
-	id: 1,
-	title: title,
-	date: 1622860800, // 2021-06-05
-	content: text,
-	category: ['前端', 'JavaScript'],
+  id: 1,
+  title: title,
+  date: 1622860800, // 2021-06-05
+  content: text,
+  category: '1,2',
 });
 
 const iconList = () => {
-	return;
+  return;
 };
 
 export default defineComponent({
-	name: 'HomePage',
-	setup() {
-		return () => (
-			<ClientPageModel>
-				{{
-					mainPart: () => (
-						<div class={styles['article-countainer']}>
-							<h1 class={styles['article-title']}>{article.value.title}</h1>
-							<ArticleInfo
-								class={styles['article-page-info']}
-								date={article.value.date}
-								category={article.value.category}
-							/>
-							<MdPreview editorId={'id'} modelValue={text} />
-						</div>
-					),
-					rightPart: () => (
-						<div class={styles['article-right-part']}>
-							<MdCatalog editorId={'id'} scrollElement={scrollElement} />
-						</div>
-					),
-				}}
-			</ClientPageModel>
-		);
-	},
+  name: 'ArticlePage',
+  setup() {
+    return () => (
+      <ClientPageModel>
+        {{
+          mainPart: () => (
+            <div class={styles['article-countainer']}>
+              <h1 class={styles['article-title']}>{article.value.title}</h1>
+              <ArticleInfo
+                class={styles['article-page-info']}
+                date={article.value.date}
+                category={article.value.category}
+              />
+              <MdPreview editorId={'id'} modelValue={text} />
+            </div>
+          ),
+          rightPart: () => (
+            <div class={styles['article-right-part']}>
+              <MdCatalog editorId={'id'} scrollElement={scrollElement} />
+            </div>
+          ),
+        }}
+      </ClientPageModel>
+    );
+  },
 });

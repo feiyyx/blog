@@ -157,7 +157,16 @@ export const handleRouter = (app: Application) => {
 
         const wrap = async (ctx: Context, ...args: any[]): Promise<any> => {
             const controllerIns = new constructorFunction(ctx);
-            return await controllerIns[methodName](ctx, ...args);
+            const result = await controllerIns[methodName](ctx, ...args);
+            const contentType = ctx.get('Content-Type');
+            if (!contentType || contentType.indexOf('application/json') !== -1) {
+                ctx.body = {
+                    code: 0,
+                    data: result,
+                    msg: 'success',
+                };
+            }
+
         };
         router[requestMethod](curPath, ...controllerMiddlewares, ...middlewares, wrap);
     });

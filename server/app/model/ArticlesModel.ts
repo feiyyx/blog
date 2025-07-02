@@ -1,6 +1,7 @@
+
 export default app => {
     const { STRING, INTEGER, TEXT, BIGINT } = app.Sequelize;
-    const ArticlesModel = app.model.define('articles', {
+    const articlesModel = app.model.define('articles', {
         id: {
             autoIncrement: true,
             type: INTEGER,
@@ -23,17 +24,24 @@ export default app => {
             type: TEXT,
             allowNull: true,
         },
-        created_at: {
+        createdAt: {
             type: BIGINT,
             allowNull: true,
             defaultValue: null,
+            field: 'created_at',
         },
-        updated_at: {
+        updatedAt: {
             type: BIGINT,
             allowNull: true,
             defaultValue: null,
+            field: 'updated_at',
         }
+    }, {
+        tableName: 'articles',
+        sequelize: app.model,
+        underscored: true,
+        timestamps: true,
     });
 
-    return ArticlesModel;
+    return articlesModel;
 };

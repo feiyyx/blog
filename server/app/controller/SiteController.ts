@@ -8,6 +8,6 @@ export default class SiteController extends Controller {
     @HttpGet()
     async index() {
         this.logger.info('hello egg logger');
-        this.ctx.body = 'hello egg';
+        return 'hello egg';
     }
 }

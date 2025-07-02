@@ -8,10 +8,23 @@ export default class ArticleController extends Controller {
     @HttpGet('/list')
     @UseMiddleware(testMiddleware)
     async getArticleList() {
-        const { ctx, app } = this;
-        console.log('app: ', app);
+        const { ctx } = this;
         const { page = 1, pageSize = 20 } = ctx.query;
         const result = await this.ctx.service.articleService.getArticleList(page, pageSize);
-        this.ctx.body = result;
+        const { count, rows } = result;
+        return {
+            total: count,
+            data: rows,
+        };
+    }
+
+    @HttpGet('/tags')
+    async getTags() {
+        const result = await this.ctx.service.articleService.getTags();
+        const tagMap = result.reduce((map, tag) => {
+            map[tag.id] = tag.name;
+            return map;
+        }, {});
+        return tagMap;
     }
 }

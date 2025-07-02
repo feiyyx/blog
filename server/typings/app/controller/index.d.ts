@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 import 'egg';
-import ExportHome from '../../../app/controller/ArticleController.js';
+import ExportHome from '../../../app/controller/articleController.js';
 import ExportUser from '../../../app/controller/user.js';
 
 declare module 'egg' {

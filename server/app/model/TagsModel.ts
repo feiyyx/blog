@@ -1,6 +1,6 @@
 export default app => {
     const { INTEGER, STRING } = app.Sequelize;
-    const TagsModel = app.model.define('tags', {
+    const tagsModel = app.model.define('tags', {
         id: {
             autoIncrement: true,
             type: INTEGER,
@@ -13,5 +13,5 @@ export default app => {
         }
     });
 
-    return TagsModel;
+    return tagsModel;
 };

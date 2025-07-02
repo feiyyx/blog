@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 import 'egg';
-import ExportHelloService from '../../../app/service/ArticleService.js';
+import ExportHelloService from '../../../app/service/articleService.js';
 type AnyClass = new (...args: any[]) => any;
 type AnyFunc<T = any> = (...args: any[]) => T;
 type CanExportFunc = AnyFunc<Promise<any>> | AnyFunc<IterableIterator<any>>;

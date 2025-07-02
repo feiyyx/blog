@@ -1,5 +1,5 @@
 import { app } from '@eggjs/mock/bootstrap';
-import { HelloService } from 'app/service/ArticleService';
+import { HelloService } from 'app/service/articleService';
 import { strict as assert } from 'node:assert';
 
 describe('test/app/module/foo/service/HelloService.test.js', () => {
