@@ -1,4 +1,4 @@
-import { RequestMethod } from './constant';
+import { ControllerParamType, RequestMethod } from './constant';
 export interface RouterControllerInfo {
     pathPrefix: string;
     middlewares: any[];
@@ -18,3 +18,10 @@ export interface RouterControllerMethodInfo {
 export interface RouterControllerMethodMetaData {
     [key: string]: RouterControllerMethodInfo
 }
+
+export interface ControllerParamInfo {
+    paramType: ControllerParamType;
+    paramIndex: number;
+    method: RequestMethod;
+}
+

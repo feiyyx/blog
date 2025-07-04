@@ -21,6 +21,19 @@ export default class ArticleService extends Service {
         }
     }
 
+    async getArticle(id: number) {
+        try {
+            const startTime = Date.now();
+            const result = await this.ctx.model.ArticlesModel.findByPk(id);
+            // 毫秒
+            this.logger.info('查询文章详情成功，耗时：', Date.now() - startTime, 'ms');
+            return result;
+        } catch (e) {
+            this.logger.error('获取文章详情失败' + e);
+            throw e;
+        }
+    }
+
     async getTags() {
         try {
             const startTime = Date.now();

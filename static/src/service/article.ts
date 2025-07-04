@@ -9,6 +9,16 @@ class Article {
         })
     }
 
+    static async getArticleDetail(id: number): Promise<any> {
+        return request({
+            url: '/article/detail',
+            method: 'GET',
+            params: {
+                id,
+            },
+        })
+    }
+
     static async getTagMap(): Promise<any> {
         return request({
             url: '/article/tags',

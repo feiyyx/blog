@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/indent */
 // https://juejin.cn/post/6844904100589469710?searchId=20250630165516923B723D48B479097029
 import { Application, Context } from 'egg';
 import 'reflect-metadata';
@@ -117,19 +118,6 @@ export const UseMiddleware = (middleware: any, customOptions?: object | null) =>
         return descriptor;
     };
 
-
-// export const getMiddlewares = (methodName: string) => {
-//     // 类上可能挂载的中间件
-//     const classMiddlewares: any[] = Reflect.getMetadata(MIDDLEWARE_PREFIX, controllerProtype) || [];
-//     const methodMiddlewares = Reflect.getMetadata(MIDDLEWARE_PREFIX, controllerProtype);
-//     if (methodMiddlewares) {
-//         const curMethodMiddles = [...classMiddlewares, ...methodMiddlewares];
-//         return curMethodMiddles;
-//     }
-//     return classMiddlewares;
-// };
-
-
 // post请求装饰器
 export const HttpPost = (path: string = ''): MethodDecorator =>
     methodWarpper(path, RequestMethod.POST);
@@ -156,8 +144,10 @@ export const handleRouter = (app: Application) => {
         app.logger.info(`register URL * ${requestMethod} ${curPath} * ${className}.${methodName.toString()}`);
 
         const wrap = async (ctx: Context, ...args: any[]): Promise<any> => {
+
+
             const controllerIns = new constructorFunction(ctx);
-            const result = await controllerIns[methodName](ctx, ...args);
+            const result = await controllerIns[methodName](...args);
             const contentType = ctx.get('Content-Type');
             if (!contentType || contentType.indexOf('application/json') !== -1) {
                 ctx.body = {

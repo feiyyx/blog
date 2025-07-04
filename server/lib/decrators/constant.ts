@@ -6,3 +6,11 @@ export enum RequestMethod {
     PATCH = 'patch',
     OPTIONS = 'options',
 }
+
+export enum ControllerParamType {
+    Integer = 'interger',
+    String = 'string',
+    Object = 'object',
+    Array = 'array',
+    Binary = 'binary',
+}
