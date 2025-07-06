@@ -4,6 +4,7 @@ import { defineStore } from 'pinia';
 import { computed, ref } from 'vue';
 import styles from './home-page.module.css';
 
+// TODO 优化成骨架屏
 const testArticleList: Article[] = [
     {
         id: 1,
