@@ -1,0 +1,53 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "egg": {
+        "typescript": true
+    },
+    "scripts": {
+        "start": "eggctl start --daemon --title=egg-server-server --port=20208",
+        "stop": "eggctl stop --title=egg-server-server",
+        "dev": "egg-bin dev --port=20208",
+        "test:local": "egg-bin test",
+        "pretest": "npm run clean && npm run lint -- --fix",
+        "test": "egg-bin test",
+        "preci": "npm run clean && npm run lint",
+        "ci": "egg-bin cov",
+        "postci": "npm run prepublishOnly && npm start && npm stop && npm run clean",
+        "lint": "eslint . --ext .ts --cache",
+        "tsc": "tsc",
+        "clean": "tsc -b --clean",
+        "prepublishOnly": "npm run clean && npm run tsc",
+        "model": "sequelize-auto -o \"./app/models\" -d test -h 192.168.3.116 -u root -p 33066 -x admin -e mysql"
+    },
+    "dependencies": {
+        "@eggjs/scripts": "^4.0.0",
+        "@eggjs/tracer": "^3.0.0",
+        "egg": "^3.17.1",
+        "egg-sequelize": "^6.0.0",
+        "mysql2": "^3.14.1",
+        "sequelize-auto": "^0.8.8"
+    },
+    "devDependencies": {
+        "@eggjs/bin": "7",
+        "@eggjs/mock": "6",
+        "@eggjs/tsconfig": "1",
+        "@types/mocha": "10",
+        "@types/node": "22",
+        "eslint": "8",
+        "eslint-config-egg": "14",
+        "reflect-metadata": "^0.2.2",
+        "typescript": "5"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "",
+    "license": "MIT"
+}

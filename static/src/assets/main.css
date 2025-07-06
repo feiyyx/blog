@@ -1,0 +1,19 @@
+@import './base.css';
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #f1f5e2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li,
+ol {
+    list-style: none;
+}

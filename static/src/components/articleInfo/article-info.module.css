@@ -1,0 +1,21 @@
+.article-date {
+	font-size: 1rem;
+	color: #888;
+	transform: translateY(0.1rem);
+}
+
+.article-date-icon {
+	width: 0.8125rem;
+	height: 0.8125rem;
+	margin-right: 0.2125rem;
+	transform: translateY(0.075rem);
+}
+
+.article-info {
+	display: flex;
+	align-items: center;
+}
+
+.article-category-tag {
+	margin-left: 0.875rem;
+}
