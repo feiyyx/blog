@@ -7,8 +7,8 @@ export default class ArticleService extends Service {
             const startTime = Date.now();
 
             const result = await this.ctx.model.ArticlesModel.findAndCountAll({
-                attributes: ['id', 'summary', 'title', 'tag', 'createdAt'],
-                order: [['createdAt', 'DESC']],
+                attributes: [ 'id', 'summary', 'title', 'tag', 'createdAt' ],
+                order: [[ 'createdAt', 'DESC' ]],
                 offset: (page - 1) * pageSize,
                 limit: pageSize,
             });
@@ -38,7 +38,7 @@ export default class ArticleService extends Service {
         try {
             const startTime = Date.now();
             const result = await this.ctx.model.TagsModel.findAll({
-                attributes: ['id', 'name'],
+                attributes: [ 'id', 'name' ],
             });
             // 毫秒
             this.logger.info('查询标签列表成功，耗时：', Date.now() - startTime, 'ms');
@@ -49,3 +49,4 @@ export default class ArticleService extends Service {
         }
     }
 }
+

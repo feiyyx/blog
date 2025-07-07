@@ -10,7 +10,7 @@ export default app => {
         name: {
             type: STRING(100),
             allowNull: false,
-        }
+        },
     });
 
     return tagsModel;

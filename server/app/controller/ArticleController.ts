@@ -9,10 +9,8 @@ export default class ArticleController extends Controller {
     async getArticleList() {
         const { ctx } = this;
         const { page = 1, pageSize = 20 } = ctx.query;
-        const result = await this.ctx.service.articleService.getArticleList(page, pageSize);
+        const result = await this.ctx.service.articleService.getArticleList(Number(page), Number(pageSize));
         const { count, rows } = result;
-        // sleep 3s
-        await new Promise(resolve => setTimeout(resolve, 3000));
         return {
             total: count,
             data: rows,

@@ -35,7 +35,7 @@ export default app => {
             allowNull: true,
             defaultValue: null,
             field: 'updated_at',
-        }
+        },
     }, {
         tableName: 'articles',
         sequelize: app.model,

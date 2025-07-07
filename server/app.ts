@@ -10,8 +10,8 @@ export default class AppBootHook {
     }
 
     async didReady() {
-        // 所有的插件都已启动，可以执行一些初始化操作
-        // applyMiddlewares(this.app);
+    // 所有的插件都已启动，可以执行一些初始化操作
+    // applyMiddlewares(this.app);
         this.app.logger.info('Middlewares applied successfully!');
     }
 }

@@ -36,6 +36,7 @@
         "@eggjs/tsconfig": "1",
         "@types/mocha": "10",
         "@types/node": "22",
+        "egg-mock": "^5.15.1",
         "eslint": "8",
         "eslint-config-egg": "14",
         "reflect-metadata": "^0.2.2",

@@ -1,3 +1,4 @@
 **/*.d.ts
 node_modules/
-.eslintrc
+.eslintrc.json
+.prettierrc.json

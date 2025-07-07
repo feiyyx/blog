@@ -67,7 +67,7 @@ const handleClassMiddlewareDecrator = (target: any, middleware: any) => {
     if (!metadata[className]) {
         metadata[className] = {
             pathPrefix: '',
-            middlewares: [middleware],
+            middlewares: [ middleware ],
         };
     } else {
         metadata[className].middlewares.push(middleware);
@@ -85,7 +85,7 @@ const handleMethodMiddlewareDecrator = (target: any, middleware: any, methodName
         metadata[key] = {
             path: methodName.toString().replace(/[A-Z]/g, match => `-${match.toLowerCase()}`), // 小写驼峰转-小写
             requestMethod: RequestMethod.GET, // 默认为get方法
-            middlewares: [middleware],
+            middlewares: [ middleware ],
             methodName,
             className,
             constructorFunction: target.constructor,

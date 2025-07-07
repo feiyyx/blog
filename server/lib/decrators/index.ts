@@ -5,6 +5,6 @@ export {
     HttpPost,
     HttpPut,
     Router,
-    UseMiddleware
+    UseMiddleware,
 };
 

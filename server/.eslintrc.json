@@ -1,0 +1,26 @@
+// 格式化
+{
+    "root": true,
+    "extends": [
+        "eslint-config-egg/typescript",
+        "eslint-config-egg/lib/rules/enforce-node-prefix"
+    ],
+    "rules": {
+        "indent": [ "error", 4, { "SwitchCase": 1, "VariableDeclarator": 1 }],
+        "@typescript-eslint/indent": "off",
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "object-curly-spacing": ["error", "always"]
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.ts"
+            ],
+            "rules": {
+                "indent": [ "error", 4, { "SwitchCase": 1, "VariableDeclarator": 1 }]
+            }
+        }
+    ]
+}
