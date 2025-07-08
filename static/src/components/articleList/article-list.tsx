@@ -34,7 +34,7 @@ export default defineComponent({
                             type="primary"
                             link
                             class={styles['read-more-button']}
-                            href={`/article/${article.id}`}
+                            ref={`/article/${article.id}`}
                         >
                             {'阅读全文 >>'}
                         </ElButton>

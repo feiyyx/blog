@@ -1,9 +1,9 @@
 // 根据login-page.ts 生成pinia版本的代码
-import { defineStore } from 'pinia';
-import { ref, reactive } from 'vue';
-import { LOGIN_STATUS, PASSPORT_MAX_LENGTH } from './constants';
 import type { FormInstance, FormRules } from 'element-plus';
 import { ElMessage } from 'element-plus';
+import { defineStore } from 'pinia';
+import { reactive, ref } from 'vue';
+import { LOGIN_STATUS, PASSPORT_MAX_LENGTH } from './constants';
 interface VALID_RETURN {
     status: boolean;
     message: string;
@@ -104,5 +104,4 @@ export const useLoginPageStore = defineStore('loginPage', () => {
         checkPassword,
         handleLogin,
     };
-}
 });

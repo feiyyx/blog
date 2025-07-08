@@ -11,6 +11,7 @@ node_modules
 /server/node_modules
 /server/logs
 /server/var
+/server/dist
 /static/node_modules
 .DS_Store
 dist
