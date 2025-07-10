@@ -146,9 +146,8 @@ export const handleRouter = (app: Application) => {
         const wrap = async (ctx: Context, ...args: any[]): Promise<any> => {
             const controllerIns = new constructorFunction(ctx);
             const result = await controllerIns[methodName](...args);
-            const contentType = ctx.get('Content-Type');
-            console.log('contentType: ', contentType);
-            if (!contentType || contentType.indexOf('application/json') !== -1) {
+            // const contentType = ctx.get('Content-Type');
+            if (methodName !== 'index') {
                 ctx.body = {
                     code: 0,
                     data: result,

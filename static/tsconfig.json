@@ -13,6 +13,8 @@
     ],
     "compilerOptions": {
         "jsx": "preserve",
-        "jsxImportSource": "vue"
+        "jsxImportSource": "vue",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
     }
 }

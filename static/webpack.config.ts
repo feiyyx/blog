@@ -12,23 +12,23 @@ import 'webpack-dev-server';
 
 const config: WebpackConfiguration = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-    entry: './src/main.ts',
+    entry: fileURLToPath(new URL('./src/main.ts', import.meta.url)),
     output: {
         path: fileURLToPath(new URL('../server/dist', import.meta.url)), // 打包结果输出路径
         filename: 'js/[name].js', // 每个输出js的名称，多文件入口
         clean: true,
-        publicPath: '/',  // 打包后文件的公共前缀路径
+        publicPath: '/public/',  // 打包后文件的公共前缀路径
     },
     plugins: [
         // 生成HTML index入口文件
         new HtmlWebpackPlugin({
             template: './index.html',
-            inject: true, // 自动注入静态资源
+            // inject: true, // 自动注入静态资源
         }),
         // 提取CSS到单独文件中
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css',
-            chunkFilename: 'chunk.[contenthash].css',
+            filename: 'css/[name].[contenthash].css',
+            chunkFilename: 'css/chunk.[contenthash].css',
         }),
         new VueLoaderPlugin(),
     ],
@@ -37,7 +37,25 @@ const config: WebpackConfiguration = {
             // 处理css文件
             {
                 test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'style-loader', 'css-loader',
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: true,
+                            defaultExport: true, // 解决warning问题，支持 import default from '...' 写法
+                        }
+                    },
+                    // 'style-loader', // wp官方推荐不要同时使用mini插件和这个
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            esModule: true,
+                            importLoaders: 1,
+                            modules: {
+                                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                            },
+                        },
+                    },
                 ], // "sass-loader"
             },
             // 处理vue文件

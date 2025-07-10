@@ -36,6 +36,11 @@ export default (appInfo: EggAppInfo) => {
         },
     };
 
+    config.static = {
+        prefix: '/public/',
+        dir: path.join(appInfo.baseDir, 'dist'),
+    };
+
     // add your special config in here
     // Usage: `app.config.bizConfig.sourceUrl`
     const bizConfig = {
