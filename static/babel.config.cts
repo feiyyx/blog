@@ -21,7 +21,7 @@ export default {
             },
         ],
         "@vue/babel-plugin-jsx",
-        '@babel/proposal-class-properties',
-        '@babel/proposal-object-rest-spread',
+        // '@babel/proposal-class-properties',
+        // '@babel/proposal-object-rest-spread',
     ]
 }

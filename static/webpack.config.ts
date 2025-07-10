@@ -6,24 +6,34 @@ import { fileURLToPath, URL } from 'node:url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 // import postcssPresetEnv from 'postcss-preset-env';
+import { readFileSync } from 'fs'; // 导入 Node.js 的文件读取模块
 import { VueLoaderPlugin } from 'vue-loader';
 import { Configuration as WebpackConfiguration } from 'webpack';
 import 'webpack-dev-server';
 
 const config: WebpackConfiguration = {
-    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+    mode: 'production', //process.env.NODE_ENV === 'production' ? 'production' : 'development',
     entry: fileURLToPath(new URL('./src/main.ts', import.meta.url)),
     output: {
         path: fileURLToPath(new URL('../server/dist', import.meta.url)), // 打包结果输出路径
         filename: 'js/[name].js', // 每个输出js的名称，多文件入口
+        chunkFilename: 'js/chunk.[contenthash].js',
         clean: true,
         publicPath: '/public/',  // 打包后文件的公共前缀路径
     },
     plugins: [
         // 生成HTML index入口文件
         new HtmlWebpackPlugin({
-            template: './index.html',
-            // inject: true, // 自动注入静态资源
+            // template: './index.html',
+            templateContent: () => {
+                // 读取原始的 index.html 内容
+                let html = readFileSync(fileURLToPath(new URL('./index.html', import.meta.url)), 'utf-8');
+                // 如果是生产环境，移除 Vite 相关的 script 标签
+                html = html.replace(/<script type="module" src="\/src\/main\.ts"><\/script>/, '');
+                return html;
+            },
+            // 当使用 templateContent 时，你可能需要手动控制注入位置
+            inject: 'head', // 注入到 head 标签
         }),
         // 提取CSS到单独文件中
         new MiniCssExtractPlugin({
@@ -34,9 +44,33 @@ const config: WebpackConfiguration = {
     ],
     module: {
         rules: [
-            // 处理css文件
+            // --- 处理来自 node_modules 的全局 CSS (包括 Element Plus CSS) ---
             {
                 test: /\.css$/,
+                include: /node_modules/, // 只处理 node_modules 里的 CSS
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            esModule: true,
+                            defaultExport: true,
+                        }
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            esModule: true,
+                            importLoaders: 1,
+                            // 这里不开启 modules，让 Element Plus 的全局 CSS 生效
+                            modules: false, // 关键：禁用 CSS Modules
+                        },
+                    },
+                ],
+            },
+            // --- 处理你自己的本地 CSS 文件 需要开启 CSS Modules ---
+            {
+                test: /\.css$/,
+                exclude: /node_modules/, // 排除 node_modules 里的 CSS
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -51,12 +85,13 @@ const config: WebpackConfiguration = {
                         options: {
                             esModule: true,
                             importLoaders: 1,
+                            // 你可以在这里继续使用 CSS Modules 配置，如果你希望自己的 CSS 模块化
                             modules: {
-                                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                                localIdentName: '[name]--[hash:base64:5]',
                             },
                         },
                     },
-                ], // "sass-loader"
+                ],
             },
             // 处理vue文件
             {
@@ -105,7 +140,7 @@ const config: WebpackConfiguration = {
         ],
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.jsx', '.js', '.json', '.vue'],
+        extensions: ['.ts', '.tsx', '.jsx', '.js', '.json', '.vue', '.css'],
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
