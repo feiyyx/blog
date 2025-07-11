@@ -8,8 +8,9 @@ import { RouterControllerMetaData, RouterControllerMethodInfo, RouterControllerM
 let controllerProtype: object = {};
 
 const initControllerPrototype = (targetClass: any) => {
-    if (!Object.values(controllerProtype)) {
-        controllerProtype = targetClass.prototype;
+    if (!Object.values(controllerProtype).length) {
+        const prototype = Object.getPrototypeOf(targetClass);
+        controllerProtype = targetClass.prototype || prototype;
     }
 };
 
@@ -19,7 +20,7 @@ const initControllerPrototype = (targetClass: any) => {
  * 可能会不存在
  * target 为 class的constructor
  */
-export const Router = (pathPrefix: string): ClassDecorator => (targetClass): void => {
+export const Router = (pathPrefix: string = ''): ClassDecorator => (targetClass): void => {
     // 使用 ROUTER_CONTROLLER_PREFIX 作为元数据key标识controller层装饰器
     // 元数据的值为 pathPrefix
     // 将该元数据挂载到targetClass上
@@ -45,7 +46,7 @@ const methodWarpper = (path: string, requestMethod: RequestMethod): MethodDecora
     initControllerPrototype(targetClass);
     const className = targetClass.constructor.name;
     const routerMetaData: RouterControllerMethodInfo = {
-        path,
+        path: [path],
         requestMethod,
         middlewares: [],
         methodName,
@@ -54,10 +55,20 @@ const methodWarpper = (path: string, requestMethod: RequestMethod): MethodDecora
     };
 
     const metadata: RouterControllerMethodMetaData = Reflect.getMetadata(ROUTER_CONTROLLER_METHOD_PREFIX, controllerProtype) || {};
+    const key = className + methodName.toString();
+    const methodInfo = metadata[key];
+    if (methodInfo) {
+        if (methodInfo.path.length) {
+            methodInfo.path.push(path);
+        } else {
+            methodInfo.path = [path];
+        }
+        metadata[key] = methodInfo;
+    } else {
+        metadata[key] = routerMetaData;
+    }
 
-    metadata[className + methodName.toString()] = routerMetaData;
-
-    Reflect.defineMetadata(ROUTER_CONTROLLER_METHOD_PREFIX, metadata, targetClass);
+    Reflect.defineMetadata(ROUTER_CONTROLLER_METHOD_PREFIX, metadata, controllerProtype);
 };
 
 const handleClassMiddlewareDecrator = (target: any, middleware: any) => {
@@ -83,7 +94,7 @@ const handleMethodMiddlewareDecrator = (target: any, middleware: any, methodName
 
     if (!metadata[key]) {
         metadata[key] = {
-            path: methodName.toString().replace(/[A-Z]/g, match => `-${match.toLowerCase()}`), // 小写驼峰转-小写
+            path: [], // 小写驼峰转-小写
             requestMethod: RequestMethod.GET, // 默认为get方法
             middlewares: [middleware],
             methodName,
@@ -140,24 +151,27 @@ export const handleRouter = (app: Application) => {
         const { path, requestMethod, middlewares, methodName, className, constructorFunction } = curMethodData;
         const curController = controllerPrefix[className] || {};
         const { pathPrefix = '', middlewares: controllerMiddlewares = [] } = curController;
-        const curPath = `${pathPrefix}${path === 'index' ? '' : path}`;
-        app.logger.info(`register URL * ${requestMethod} ${curPath} * ${className}.${methodName.toString()}`);
+        if (path.length === 0) {
+            path.push(methodName.toString().replace(/[A-Z]/g, match => `-${match.toLowerCase()}`));
+        }
+        path.forEach((curPath: string) => {
+            const realpath = `${pathPrefix}${curPath === 'index' ? '' : curPath}`;
+            app.logger.info(`register URL * ${requestMethod} ${realpath} * ${className}.${methodName.toString()}`);
 
-        const wrap = async (ctx: Context, ...args: any[]): Promise<any> => {
-            const controllerIns = new constructorFunction(ctx);
-            const result = await controllerIns[methodName](...args);
-            // const contentType = ctx.get('Content-Type');
-            if (methodName !== 'index') {
-                ctx.body = {
-                    code: 0,
-                    data: result,
-                    msg: 'success',
-                };
-            }
+            const wrap = async (ctx: Context, ...args: any[]): Promise<any> => {
+                const controllerIns = new constructorFunction(ctx);
+                const result = await controllerIns[methodName](...args);
+                // const contentType = ctx.get('Content-Type');
+                if (methodName !== 'index') {
+                    ctx.body = {
+                        code: 0,
+                        data: result,
+                        msg: 'success',
+                    };
+                }
 
-        };
-        router[requestMethod](curPath, ...controllerMiddlewares, ...middlewares, wrap);
+            };
+            router[requestMethod](realpath, ...controllerMiddlewares, ...middlewares, wrap);
+        });
     });
-
-
 };

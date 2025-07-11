@@ -5,7 +5,7 @@ import testMiddleware from '../middleware/testMiddleware';
 @Router('/api/article')
 export default class ArticleController extends Controller {
     @HttpGet('/list')
-    @UseMiddleware(testMiddleware)
+    @UseMiddleware(testMiddleware({ test: 1 }))
     async getArticleList() {
         const { ctx } = this;
         const { page = 1, pageSize = 20 } = ctx.query;
