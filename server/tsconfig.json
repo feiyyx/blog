@@ -1,13 +1,17 @@
 {
-  "extends": "@eggjs/tsconfig",
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "declaration": false,
-    "paths": {
-      "@/module/*": ["app/module/*"]
-    },
-    "baseUrl": "."
-  }
+    "extends": "@eggjs/tsconfig",
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "paths": {
+            "@/module/*": [
+                "app/module/*"
+            ]
+        },
+        "baseUrl": "."
+    }
 }
