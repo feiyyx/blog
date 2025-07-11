@@ -171,8 +171,6 @@ export const handleRouter = (app: Application) => {
                 }
 
             };
-            console.log('middlewares: ', middlewares);
-            console.log('controllerMiddlewares: ', controllerMiddlewares);
             router[requestMethod](realpath, ...controllerMiddlewares, ...middlewares, wrap);
         });
     });
