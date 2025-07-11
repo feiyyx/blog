@@ -6,7 +6,6 @@ import { fileURLToPath, URL } from 'node:url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 // import postcssPresetEnv from 'postcss-preset-env';
-import { readFileSync } from 'fs'; // 导入 Node.js 的文件读取模块
 import { VueLoaderPlugin } from 'vue-loader';
 import { Configuration as WebpackConfiguration } from 'webpack';
 import 'webpack-dev-server';
@@ -24,16 +23,16 @@ const config: WebpackConfiguration = {
     plugins: [
         // 生成HTML index入口文件
         new HtmlWebpackPlugin({
-            // template: './index.html',
-            templateContent: () => {
-                // 读取原始的 index.html 内容
-                let html = readFileSync(fileURLToPath(new URL('./index.html', import.meta.url)), 'utf-8');
-                // 如果是生产环境，移除 Vite 相关的 script 标签
-                html = html.replace(/<script type="module" src="\/src\/main\.ts"><\/script>/, '');
-                return html;
-            },
-            // 当使用 templateContent 时，你可能需要手动控制注入位置
-            inject: 'head', // 注入到 head 标签
+            template: './index.html',
+            // templateContent: () => {
+            //     // 读取原始的 index.html 内容
+            //     let html = readFileSync(fileURLToPath(new URL('./index.html', import.meta.url)), 'utf-8');
+            //     // 如果是生产环境，移除 Vite 相关的 script 标签
+            //     html = html.replace(/<script type="module" src="\/src\/main\.ts"><\/script>/, '');
+            //     return html;
+            // },
+            // // 当使用 templateContent 时，你可能需要手动控制注入位置
+            inject: true, // 注入到 head 标签
         }),
         // 提取CSS到单独文件中
         new MiniCssExtractPlugin({

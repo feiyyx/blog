@@ -6,6 +6,7 @@ import { HttpGet, Router } from '../../lib/decrators';
 export default class SiteController extends Controller {
 
     @HttpGet()
+    @HttpGet('/article')
     async index() {
         this.logger.info('hello egg logger');
         this.ctx.set('Content-Type', 'text/html');
