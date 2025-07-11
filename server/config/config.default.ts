@@ -1,4 +1,5 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
+import path from 'path';
 
 export default (appInfo: EggAppInfo) => {
     const config = {} as PowerPartial<EggAppConfig>;
@@ -23,6 +24,21 @@ export default (appInfo: EggAppInfo) => {
         database: 'test',
         user: 'root',
         password: 'admin',
+    };
+
+    config.view = {
+        root: [
+            path.join(appInfo.baseDir, 'dist'),
+        ].join(','),
+        mapping: {
+            '.nj': 'nunjucks',
+            '.html': 'nunjucks',
+        },
+    };
+
+    config.static = {
+        prefix: '/public/',
+        dir: path.join(appInfo.baseDir, 'dist'),
     };
 
     // add your special config in here

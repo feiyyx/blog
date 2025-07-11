@@ -75,17 +75,17 @@ multiArray([5,7,1]) // [[[0]*7]*5]
 
 <br>
 上传于2021-06-05`;
-const title = text.match(/#\s{1}.*\n/)
-    ? text
-        ?.match(/#\s{1}.*\n/)[0]
+const matchResult = text.match(/#\s{1}.*\n/);
+const title = matchResult
+    ? matchResult[0]
         .replace('# ', '')
         .replace('\n', '')
         .trim()
     : '';
 
 text = text
-    .replaceAll('<center>', '')
-    .replaceAll('</center>', '')
+    .replace(/<center>/g, '')
+    .replace(/<\/center>/g, '')
     .replace(/#\s{1}.*\n/, '');
 const article = {
     id: 1,

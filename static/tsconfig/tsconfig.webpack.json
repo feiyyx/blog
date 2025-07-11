@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "tsBuildInfoFile": "../node_modules/.tmp/tsconfig.webpack.tsbuildinfo",
+        "noEmit": true, // 让 TypeScript 只做类型检查，不生成 .js 文件
+        "target": "ESNext", // 或 "es2015" / "es2017" 等，取决于你的目标环境
+        "module": "ESNext",
+        // "moduleResolution": "Bundler",
+        "types": [
+            "node"
+        ],
+        // --- gemini修正的代码 ---
+        "moduleResolution": "node",
+        "jsx": "preserve", // 保留 JSX 语法，让 Babel 处理
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": true, // 允许导入 JS 文件
+        "isolatedModules": true, // 针对 Babel 编译的优化，确保每个文件都是独立模块
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable"
+        ], // 引入标准库
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "../src/*"
+            ] // 你的路径别名
+        }
+    },
+    "include": [
+        "../src/**/*.ts",
+        "../src/**/*.tsx",
+        "../src/**/*.vue",
+        "../types/**/*.d.ts"
+    ], // 包含的文件
+    "exclude": [
+        "node_modules"
+    ] // 排除的文件
+}
