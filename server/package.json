@@ -7,8 +7,8 @@
         "typescript": true
     },
     "scripts": {
-        "start": "eggctl start --daemon --title=egg-server-server --port=20208",
-        "stop": "eggctl stop --title=egg-server-server",
+        "start": "egg-scripts start --title=demo --port=20208",
+        "stop": "egg-scripts stop --title=demo",
         "dev": "egg-bin dev --port=20208",
         "test:local": "egg-bin test",
         "pretest": "npm run clean && npm run lint -- --fix",
@@ -17,7 +17,7 @@
         "ci": "egg-bin cov",
         "postci": "npm run prepublishOnly && npm start && npm stop && npm run clean",
         "lint": "eslint . --ext .ts --cache",
-        "tsc": "tsc",
+        "build": "tsc",
         "clean": "tsc -b --clean",
         "prepublishOnly": "npm run clean && npm run tsc",
         "model": "sequelize-auto -o \"./app/models\" -d test -h 192.168.3.116 -u root -p 33066 -x admin -e mysql"
@@ -26,6 +26,7 @@
         "@eggjs/scripts": "^4.0.0",
         "@eggjs/tracer": "^3.0.0",
         "egg": "^3.17.1",
+        "egg-scripts": "^3.1.0",
         "egg-sequelize": "^6.0.0",
         "egg-view-nunjucks": "^2.3.0",
         "mysql2": "^3.14.1",
